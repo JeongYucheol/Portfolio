@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no">
+    <title>outfitters</title>
+    <link href="https://opensource.keycdn.com/fontawesome/4.7.0/font-awesome.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/total.css">
+    <script type='text/javascript' src="js/prefixfree.min.js"></script>
+    <script src="http://code.jquery.com/jquery-latest.min.js"></script>
+    <script src="https://code.jquery.com/ui/1.11.4/jquery-ui.min.js"></script>
+    <script src="js/jquery.easing.1.3.js"></script>
+      <script>
+       $(function(){
+          
+           function color_w(){
+                $('#gnb>p').css({'background':'#fff'})
+                $('#gnb>span,#gnb>div>span>a').css({'color':'#fff'})
+                $('header>a').css({'background':'url(/img/logo_w.png)no-repeat center center'})
+                $('#direction>ul>.bar').css({'background':'#fff'})
+                $('#direction>ul>.big,.sub,.email,.call').css({'color':'#fff'})
+           }
+           function color_b(){
+                $('#gnb>p').css({'background':'#000'})
+                $('#gnb>span,#gnb>div>span>a').css({'color':'#000'})
+                $('header>a').css({'background':'url(/img/logo.png)no-repeat center center'})
+                $('#direction>ul>.bar').css({'background':'#000'})
+                $('#direction>ul>.big,.sub,.email,.call').css({'color':'#000'})
+           }
+           $('.sub').on('mouseover', function(appear){
+             $('.big>span').css({'width':'10px','transition':'0.5s'})
+             $('.bar').css({'width':'10px','transition':'0.5s'})
+             $('.big>p').css({'opacity':'1','transition':'0.5s'})
+           })
+           $('.sub').on('mouseout', function(disappear){
+             $('.big>span').css({'width':'60px','transition':'1s'})
+             $('.big>p').css({'opacity':'0','transition':'0.5s'})
+             $('.bar').css({'width':'50px','transition':'0.5s'})
+           })
+           $('.fa-y-combinator').on('mouseover',function(){
+            $('.kakao').css({'color':'#fedd00','transition':'0.5s'})
+            
+        })
+           $('.fa-y-combinator').on('mouseout',function(){
+           $('.kakao').css({'color':'#fff','transition':'0.5s'})
+            })
+           
+           $('.textarea_add1').hide();
+           $('#sub_note').on('click',function(){
+               $('body').animate({'background':'#ebebeb'})
+               $('#textarea>div').hide();
+               $('.textarea_add1').show();
+           })
+        
+            
+           $('#textarea').on('scroll',function(){
+            
+            var scroll = $(this).scrollTop();
+            $('#textnum').text(scroll);
+                       
+            if(scroll == 100){
+            
+            $('.context_img').addClass('context_addimg1');
+            }
+            if(scroll >= 700){
+            
+            $('.context_img').addClass('context_addimg2');
+            }
+            if(scroll >= 300){
+            
+            $('.context_img').addClass('context_addimg3');
+            }
+            if(scroll == 200){
+            
+            $('.context_img').addClass('context_addimg4');
+            }
+        })
+        })
+      
+    </script>
+</head>
+<body id="body_note">
+<header><a href="http://outfitters.co.kr/main.html"></a></header>
+       <section id='gnb'>
+       <p id='p1'></p>
+       <p id='p2'></p>
+       <span>menu</span>
+       <div>
+           
+           <span><a href="http://outfitters.co.kr/about.html">about</a></span>
+           <span><a href="http://outfitters.co.kr/system.html">system</a></span>
+           <span><a href="http://outfitters.co.kr/portfolio.html">portfolio</a></span>
+           <span><a href="http://fgobikes.com/goods/catalog?code=0007">shop</a></span>
+       </div>
+       
+       
+       </section>
+       <aside>
+       <a href="https://www.facebook.com/fgoutfitters/"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+       <a href="https://www.instagram.com/outfitters2017/"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+       <a href=""><i class="fa fa-y-combinator" aria-hidden="true"></i></a>
+       </aside>
+       
+       
+       <div id="direction">
+           <ul>
+               <li class="big" id="sub_note"><span>note</span><p>.</p></li>
+               <li class="bar"></li>
+               <li class="sub" id="sub_carbon"><span>carbon</span></li>
+               <li class="sub" id="sub_stainless"><span>stainless</span></li>
+               <li class="sub" id="sub_design"><span>design</span></li>
+               
+           </ul>
+       </div>
+       
+       <div class="context_img"></div>
+       <div id="textarea"><div>여기는 빌더와 디자이너 노트 공간입니다.
+           <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>.</div>
+           <div class="textarea_add1">빌더의 입장 하하하하하하하하하하하ㅏ</div>
+       </div>
+       <div id="textnum"></div>
+      
+       
+    <footer>
+        
+        <span class="email">all@outfitters.co.kr</span>
+        <span class="call">070.8811.1975</span>
+        <span class="kakao">KakaoTalk <span>@아웃피터스</span></span>
+        <span class="map">map</span>
+        
+        <div class="place_map">
+        <p>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m21!1m12!1m3!1d3164.8157803909294!2d127.00047871944174!3d37.51226283837647!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m6!3e6!4m0!4m3!3m2!1d37.512024499999995!2d127.0011976!5e0!3m2!1sko!2skr!4v1482462700491&zoom=17" width="100%" height="100%" frameborder="0" style="border:0" allowfullscreen></iframe>
+        </p>
+        <div>
+            <span class="workshop">한강자전거공방</span>
+            <span class="subway">고속버스터미널역 8-2번 출구 도보 5분</span>
+            <span class="car">자차이용시&nbsp;&nbsp; "신반포2차아파트109동"</span>
+        </div>
+        </div>
+        <script>
+          $(function(){
+           var ccc ='2';
+           $('.map').on('click',function(){
+               if(ccc==2){$('.place_map').animate({'top':'0px'},800,'easeOutQuint')
+                ccc='1';
+              }else{$('.place_map').animate({'top':'-100%'},800,'easeOutQuint')
+                ccc='2';
+                }
+            })
+           $('.place_map').on('click',function(){
+               $('.place_map').animate({'top':'-100%'},800,'easeOutQuint')
+                ccc='2';
+            })
+           })
+        </script>
+    </footer>
+  
+</body>
+</html>

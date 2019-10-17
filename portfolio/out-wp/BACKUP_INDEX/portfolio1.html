@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no">
+    <title>Outfitters</title>
+    <link href="https://opensource.keycdn.com/fontawesome/4.7.0/font-awesome.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/total.css">
+    <script type='text/javascript' src="js/prefixfree.min.js"></script>
+    <script src="http://code.jquery.com/jquery-latest.min.js"></script>
+    <script src="https://code.jquery.com/ui/1.11.4/jquery-ui.min.js"></script>
+    <script src="js/jquery.easing.1.3.js"></script>
+    <script src="/js/jquery.bxslider.min.js"></script>
+    <link href="/css/jquery.bxslider.css" rel="stylesheet" />
+    <script>
+        $(function(){
+
+            var divv = '1';
+            var ccc = '1';
+            var aaa = '2';
+            var bbb = '2';
+            var cccc ='1';
+            var wnwd = $(window).width();
+          
+           function remove(){}
+           function remove_custom(){}
+           function color_w(){
+                $('#gnb>p').css({'background':'#fff'})
+                $('#gnb>span,#gnb>div>span>a').css({'color':'#fff'})
+                $('header>a').css({'background':'url(/img/logo_w.png)no-repeat center center'})
+           }
+           function color_b(){
+                $('#gnb>p').css({'background':'#000'})
+                $('#gnb>span,#gnb>div>span>a').css({'color':'#000'})
+                $('header>a').css({'background':'url(/img/logo.png)no-repeat center center'})
+
+           }
+           $('.sub').on('mouseover', function(appear){
+             $('.big>span').css({
+                 'width':'10px',
+                 'transition':'0.5s'
+                })
+             $('.bar').css({
+                 'width':'10px',
+                 'transition':'0.5s'
+                })
+             $('.big>p').css({
+                 'opacity':'1',
+                 'transition':'0.5s'
+                })
+           })
+           $('.sub').on('mouseout', function(disappear){
+             $('.big>span').css({
+                 'width':'70px',
+                 'transition':'1s'
+                })
+             $('.big>p').css({
+                 'opacity':'0',
+                 'transition':'0.5s'
+                })
+             $('.bar').css({
+                 'width':'50px',
+                 'transition':'0.5s'
+                })
+             
+           })
+           $('.fa-y-combinator').on('mouseover',function(){
+            $('.kakao').css({'color':'#fedd00','transition':'0.5s'})
+            
+        })
+           $('.fa-y-combinator').on('mouseout',function(){
+           $('.kakao').css({'color':'#fff','transition':'0.5s'})
+            })
+           
+           $('#sub_portfolio').on('click',function(){
+              
+           })
+           
+           $('#sub_portfolio').on('click',function(){
+              
+           })
+        
+
+        
+        
+          var mySlider = $('.bxslider').bxSlider({
+          mode:'vertical', //default : 'horizontal', options: 'horizontal', 'vertical', 'fade'
+          speed:1000, 
+          auto: true,
+          captions: false,
+          });
+        
+            
+//            카운팅 j-query
+          $('.counter').each(function() {
+          var $this = $(this),
+              countTo = $this.attr('data-count');
+
+          $({ countNum: $this.text()}).animate({
+            countNum: countTo
+          },
+        {
+            duration: 8000,
+            easing:'linear',
+            step: function() {
+            $this.text(Math.floor(this.countNum));
+            },
+            complete: function() {
+              $this.text(this.countNum);
+              //alert('finished');
+            }
+            }); 
+            });
+        
+//             반응형 j-query
+           $(window).on("resize",function(){
+                var wnwd = $(window).width();                                 
+            if(wnwd>1440) {
+             $(".m1").attr("src", "img/carbon360_0000.png");
+            } else {
+             $(".m1").attr("src", "img/carbon360_small_0000_0.png");
+            }
+           })
+        
+        
+        })
+        
+       </script>
+
+</head>
+<body id="body_portfolio">
+ <ul class="bxslider">
+      <li><img class="m1" src="/img/carbon360_0000.png" title="carbon frame"/></li>
+      <li><img class="m2" src="/img/carbon360_0001.png" title="carbon frame"/></li>
+      <li><img class="m3" src="/img/carbon360_0002.png" title="carbon frame"/></li>
+      <li><img class="m4" src="/img/carbon360_0003.png" title="carbon frame"/></li>
+      <li><img class="m5" src="/img/carbon360_0004.png" title="carbon frame"/></li>
+      <li><img class="m6" src="/img/carbon360_0005.png" title="carbon frame"/></li>
+      <li><img class="m7" src="/img/carbon360_0006.png" title="carbon frame"/></li>
+      <li><img class="m8" src="/img/carbon360_0007.png" title="carbon frame"/></li>
+      <li><img class="m9" src="/img/carbon360_0008.png" title="carbon frame"/></li>
+      <li><img class="m0" src="/img/carbon360_0009.png" title="carbon frame"/></li>
+      
+      
+    </ul>
+    <!-- 카운팅 markup
+    <div class="counter" data-count="150" id="count1">0</div>
+    <div class="counter" data-count="85" id="count2">0</div>
+    <div class="counter" data-count="2200" id="count3">0</div>
+    -->
+
+
+<header><a href="http://outfitters.co.kr/main.html"></a></header>
+       <section id='gnb'>
+       <p id='p1'></p>
+       <p id='p2'></p>
+       <span>menu</span>
+       <div>
+           
+           <span><a href="http://outfitters.co.kr/about.html">about</a></span>
+           <span><a href="http://outfitters.co.kr/system.html">system</a></span>
+           <span><a href="http://outfitters.co.kr/portfolio.html">portfolio</a></span>
+           <span><a href="http://fgobikes.com/goods/catalog?code=0007" target="_blank">shop</a></span>
+       </div>
+       </section>
+       <aside>
+       <a href="https://www.facebook.com/fgoutfitters/" target="_blank"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+       <a href="https://www.instagram.com/outfitters2017/" target="_blank"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+       <a href=""><i class="fa fa-y-combinator" aria-hidden="true"></i></a>
+       </aside>
+       <div id="direction">
+           <ul>
+               <li class="big" id="sub_portfolio"><span>portfolio</span><p>.</p></li>
+               <li class="bar"></li>
+               <li class="sub" id="sub_next"><span>next</span></li>
+               <li class="sub" id="sub_prev"><span>prev</span></li>
+           </ul>
+       </div>
+       
+       
+      
+       
+       
+       
+    <footer>
+        <span class="email">all@outfitters.co.kr</span>
+        <span class="call">070.8811.1975</span>
+        <span class="kakao">KakaoTalk <span>@아웃피터스</span></span>
+        <span class="map">map</span>
+        <div class="place_map">
+            <p>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m21!1m12!1m3!1d3164.8157803909294!2d127.00047871944174!3d37.51226283837647!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m6!3e6!4m0!4m3!3m2!1d37.512024499999995!2d127.0011976!5e0!3m2!1sko!2skr!4v1482462700491&zoom=17" width="100%" height="100%" frameborder="0" style="border:0" allowfullscreen></iframe>
+            </p>
+            <div>
+                <span class="workshop">한강자전거공방</span>
+                <span class="subway">고속버스터미널역 8-2번 출구 도보 5분</span>
+                <span class="car">자차이용시&nbsp;&nbsp; "신반포2차아파트109동"</span>
+            </div>
+        </div>
+        <script>
+          $(function(){
+           var ccc ='2';
+           $('.map').on('click',function(){
+               if(ccc==2){$('.place_map').animate({'top':'0px'},800,'easeOutQuint')
+                ccc='1';
+              }else{$('.place_map').animate({'top':'-100%'},800,'easeOutQuint')
+                ccc='2';
+                }
+            })
+           $('.place_map').on('click',function(){
+               $('.place_map').animate({'top':'-100%'},800,'easeOutQuint')
+                ccc='2';
+            })
+           })
+        </script>
+    </footer>
+    
+
+</body>
+</html>

@@ -1,0 +1,99 @@
+@charset : 'utf-8';
+@import url('https://fonts.googleapis.com/css?family=Open+Sans');
+/*'Open Sans', sans-serif;*/
+@import url('https://fonts.googleapis.com/css?family=Noto+Sans:400,700');
+/*'Noto Sans', sans-serif;*/
+@import url(http://fonts.googleapis.com/earlyaccess/nanummyeongjo.css);
+/*'Nanum Myeongjo', serif;*/
+*{margin: 0;border: 0;padding: 0; font-family:'Noto Sans', sans-serif; }
+ul,li{list-style: none;}
+a {text-decoration: none; color: white;}
+html{scrollbar-3dLight-Color: #ebebeb; scrollbar-arrow-color: #ebebeb; scrollbar-base-color: #ebebeb; scrollbar-Face-Color: #ebebeb; scrollbar-Track-Color: #ebebeb; scrollbar-DarkShadow-Color: #ebebeb; scrollbar-Highlight-Color: #ebebeb; scrollbar-Shadow-Color: #ebebeb}
+html,body{height: 100%;background-size: cover;}
+body{width: 100%;height: 100%; background: #141414;}
+#body_process{background: #e5e5e5;}
+#body_news{background: #e5e5e5;}
+#body_portfolio{background: #fff;}
+#body_hobby{background: #fff;}
+.body_black{background: #000;}
+
+#table1{
+    
+    width: 50%;
+    height: 50%;
+    margin: 200px auto;
+    color:white;
+    
+}
+
+#table1 p{
+    
+    text-align: center;
+    font-weight: normal;
+    font-size: 22px
+    
+}
+#table1 .gotoanother{
+    
+    display: inline-block;
+    font-size: 20px;
+    font-weight: normal;
+    cursor: pointer;
+    
+}
+.day{
+    font-size: 13px;
+    font-weight: normal;
+    color: dimgrey;
+}
+.email{
+    display: block;
+    font-weight: 100;
+    font-size: 16px;
+    margin: 20px 0px;
+    color: grey;
+}
+#table1 a{
+    
+    text-align: center;
+    display: block;
+    
+    
+    
+}
+#table1 a:hover{
+    
+    color: red;
+    
+    
+}
+#table2{
+    
+    width: 40%;
+    height: 50%;
+    margin: 12% auto;
+    color:white;
+    
+}
+#table2 p, a, span{
+    
+    text-align: center;
+    font-weight: normal;
+    font-size: 1rem;
+}
+#table2 a{
+    
+    color: red;
+    
+    
+}
+section{width: 100%;height: 100%;}
+section video{width: 60%;height: 100%; margin: 0 auto;display: block;}
+#bias_section{width: 80%;height: 90%;margin: 0 auto;display: block;}
+.bias_player{width: 48%;height: 80%;margin: 10% auto;display: inline;}
+.infotext{display: block;position: fixed;bottom: 2%;left: 20px;font-size: 1rem; color:#a9a9a9;}
+.cover{width: 100%;height: 100%;margin: 20px auto;}
+article{width: 30%;display: inline-block;}
+article video{width: 100%;display: inline-block;float: left;}
+.cover article span{display: block;font-size: 1em;}
+.hobby{display: inline;color: #ee0000}

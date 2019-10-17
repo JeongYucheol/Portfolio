@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no">
+    <title>Outfitters</title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/total.css">
+    <script type='text/javascript' src="js/prefixfree.min.js"></script>
+    <script src="http://code.jquery.com/jquery-latest.min.js"></script>
+    <script src="https://code.jquery.com/ui/1.11.4/jquery-ui.min.js"></script>
+    <script src="js/jquery.easing.1.3.js"></script>
+    
+      <script>
+       $(function(){
+            var menu = 1;
+            $('#gnb>div').hide();
+            function color_w(){
+                $('#gnb>p').css({'background':'#fff'})
+                $('#gnb>span,#gnb>div>span>a').css({'color':'#fff'})
+                $('header>a').css({'background':'url(img/logo_w.png)no-repeat center center'})
+                $('#direction>ul>.bar').css({'background':'#fff'})
+               $('#direction>ul>.big,.sub,.email,.call').css({'color':'#fff'})
+           }
+            function color_b(){
+                $('#gnb>p').css({'background':'#000'})
+                $('#gnb>span,#gnb>div>span>a').css({'color':'#000'})
+                $('header>a').css({'background':'url(img/logo.png)no-repeat center center'})
+                $('#direction>ul>.bar').css({'background':'#000'})
+               $('#direction>ul>.big,.sub,.email,.call').css({'color':'#000'})
+           }
+            function remove_all(){
+                $('.context').animate({'top':'100%'},500,'easeOutQuint')
+                $('#specialty_context>.cover').animate({'top':'100%'},500,'easeOutQuint')
+                $('#people_context2').animate({'top':'100%'},500,'easeOutQuint')
+            }
+            
+            $('.sub').on('mouseover', function(appear){
+             $('.big>span').css({'width':'10px','transition':'0.5s'})
+             $('.bar').css({'width':'10px','transition':'0.5s'})
+             $('.big>p').css({'opacity':'1','transition':'0.5s'})
+           })
+            $('.sub').on('mouseout', function(disappear){
+             $('.big>span').css({'width':'60px','transition':'1s'})
+             $('.big>p').css({'opacity':'0','transition':'0.5s'})
+             $('.bar').css({'width':'50px','transition':'0.5s'})
+           })
+            $('.fa-y-combinator').on('mouseover',function(){
+            $('.kakao').css({'color':'#fedd00','transition':'0.5s'})
+            $('.kakao').css({'text-shadow':'0px 1px 1px #c48204'})
+            })
+            $('.fa-y-combinator').on('mouseout',function(){
+            $('.kakao').css({'color':'#fff','transition':'0.5s'})
+           })
+            color_w();
+           $('#gnb').on('click',function(){
+              if(menu==1){
+              $('#gnb>span').fadeOut('100');
+              $('#gnb>div').fadeIn('slow');
+              menu = 2;
+              }else{
+                  $('#gnb>div').fadeOut('100');
+                  $('#gnb>span').fadeIn('slow');
+              menu = 1;
+              }
+           }) 
+           $('#sub_about').on('click',function(){
+               $('body').removeClass();
+               remove_all();
+               $('#custom_context_cover').animate({'bottom':'100%'},500,'easeOutQuint')
+               $('#about_context').animate({'top':'50%'},500,'easeOutQuint')
+               color_w();
+           })
+           
+           $('#sub_customizable').on('click',function(){
+               $('body').removeClass();
+               $('body').addClass('custombg');
+               remove_all();
+               $('#custom_context').animate({'top':'50%'},500,'easeOutQuint')
+               $('#custom_context_cover').animate({'bottom':'0'},500,'easeOutQuint')
+               color_w();
+           })
+           
+           $('#sub_tech').on('click',function(){
+               $('body').removeClass();
+               $('body').addClass('techbg');
+               remove_all();
+               $('#tech_context').animate({'top':'20%'},500,'easeOutQuint')
+               $('#custom_context_cover').animate({'bottom':'100%'},500,'easeOutQuint')
+               color_w();
+           })
+           
+           $('#sub_printer').on('click',function(){
+               $('body').removeClass();
+               $('body').addClass('printbg');
+               remove_all();
+               $('#print_context').animate({'top':'50%'},500,'easeOutQuint')
+               $('#custom_context_cover').animate({'bottom':'100%'},500,'easeOutQuint')
+               color_w();
+           })
+           
+            $('#sub_specialty').on('click',function(){
+               $('body').removeClass();
+               $('body').addClass('specialtybg');
+               remove_all();
+               $('#specialty_context').animate({'top':'50%'},500,'easeOutQuint')
+               $('#custom_context_cover').animate({'bottom':'100%'},500,'easeOutQuint')
+               $('#specialty_context>.cover').animate({'top':'75%'},500,'easeOutQuint')
+               color_w();
+           })
+            
+           $('#sub_people').on('click',function(){
+               $('body').removeClass();
+               $('body').addClass('peoplebg');
+               remove_all();
+               $('#people_context').animate({'top':'35%'},500,'easeOutQuint')
+               $('#people_context2').animate({'top':'0%'},500,'easeOutQuint')
+               $('#custom_context_cover').animate({'bottom':'100%'},500,'easeOutQuint')
+               color_w();
+           })
+       
+//          $('#process_context').find('a').each(function(){
+//              
+//              $(this).animate({'font-weight':'bold'})
+//          })
+       })
+      
+    </script>
+</head>
+<body>
+       <header><a href="index.php"></a></header>
+       <section id='gnb'>
+       <p id='p1'></p>
+       <p id='p2'></p>
+       <span>menu</span>
+       <div>
+           <span><a href="about.html">about</a></span>
+           <span><a href="process.html">process</a></span>
+           <span><a href="portfolio.html">portfolio</a></span>
+           <span><a href="#">shop</a></span>
+       </div>
+       </section>
+       <aside>
+       <a href="https://www.facebook.com/fgoutfitters/" target="_blank"><i class="fab fa-facebook" aria-hidden="true"></i></a>
+       <a href="https://www.instagram.com/outfitters2017/" target="_blank"><i class="fab fa-instagram" aria-hidden="true"></i></a>
+       <a href=""><i class="fab fa-y-combinator" aria-hidden="true"></i></a>
+       </aside>
+       <div id="direction">
+           <ul>
+               <li class="big" id="sub_about"><span>about</span><p>.</p></li>
+               <li class="bar"></li>
+               <li class="sub" id="sub_customizable"><span>custom</span></li>
+               <li class="sub" id="sub_tech"><span>tech</span></li>
+               <li class="sub" id="sub_printer"><span>printer</span></li>
+               <li class="sub" id="sub_specialty"><span>specialty</span></li>
+               <li class="sub" id="sub_people"><span>people</span></li>
+           </ul>
+       </div>
+        <div id="about_context" class = 'context'>
+       <p>저희는 자전거를 만들고 있습니다.</p>
+       <span>We Build the Bicycle </span></div>
+       <div id="custom_context_cover"></div>
+       <div id="custom_context" class = 'context'>
+       <p>라이더맞춤제작</p>
+       <span>라이더에게 딱 맞춘 자전거는 타면 탈 수록 라이더에게 새로운 경험을 제공할 것입니다. <br>
+       기존 기성품에 몸을 맞추는게 아닌, 오직 라이더만을 위해 태어난 자전거를 타고, <br> 라이딩 시 느낄 수 있는 모든 경험들을 오롯이 느껴보시길 바랍니다. </span></div>
+       <div id="tech_context" class = 'context'>
+       <p>기술적 특성</p>
+       <section class="tech_step1"></section><span>단계 하나, UD카본-로빙(roving)을 이음부분에 와인딩(winding)합니다.</span><section class="tech_step2"></section><span>단계 둘, 카본-프리프레그로 이음부분을 덮고, 수축필름으로 에폭시를 제거합니다.</span><span class="tech_step1_context">단계 하나, UD카본-로빙(roving)을 <br>이음부분에 와인딩(winding)합니다.</span><span class="tech_step2_context">단계 둘, 카본-프리프레그로 이음부분을 덮고, 수축필름으로 에폭시를 제거합니다.</span>
+       <article><span class="tech_brand">아웃피터스&nbsp;</span>는 각각의 튜브들을 접합함에 있어 카본파이버를 핸드레이업 라미네이팅 프로세스를 통하여 접합합니다. <span>&nbsp;-&nbsp;참고 1)단계 하나</span><br>카본파이버 성형에 있어 가장 중요한 것은 섬유의 원 물성치를 최대한 끌어내는 것입니다. <br>이를 위하여 가장 중요한 것은 카본원사와 에폭시의 함침량 인데 에폭시를 최대한 빼내는 것이 원 섬유의 물성치를 가장  잘 이끌어낼 수 있는 방법이라고 볼 수 있습니다. <br>이를 위하여 일반적으로 라미네이팅 시 큰 압력을 카본 원사에 가하여, 카본 원사들 끼리 접합됨과 동시에 많은 양의 에폭시를 제거하도록 하는 작업을 합니다. 이 과정에서 카본 프레임은 경량화 되고 탄성력을 가지게 됩니다. <br><span class="tech_brand">아웃피터스&nbsp;</span>에서는 튜브간 라미네이팅에 있어 결합력을 단단히 하기위한 다양한 배깅프로세스를 연구하였고 튜브성형에 가장 적합한 배깅프로세스를 찾았습니다.<span>&nbsp;-&nbsp;참고 2)단계 둘</span> <br> 
+<span class="tech_brand">아웃피터스&nbsp;</span>는 열 수축 필름으로 접합부위를 강하게 압착하여 레진의 함량을 최대한 뺄수 있는 방법으로 최대 수축압력 2500psi<span>&nbsp;-&nbsp;참고 3)</span> 로 압착하여 진공 배깅보다 훨씬 강하게 압착하여 레진의 함침량을 최소한으로 줄여 강하고 탄성 있는 프레임을 제작하고 있습니다.
+<br>
+<span> < 참고 3 ></span><br>
+진공배깅
+14.5psi
+<br>
+수축필름
+2500psi
+airtech - shrink tape
+<br>
+오토클레이브
+284.5psi
+CMAS-1500-3000H
+</article></div>
+       <div id="print_context" class = 'context'>
+       <p>Carbon 3D Printer</p>
+       <span>카본3D프린터는 프레임러그 및 각종 카본 제품을 제작하는데 쓰이며,<br>다양한 실험적 시도를 가능하게 합니다.</span></div>
+       <div id="specialty_context" class = 'context'>
+       <div class="cover"></div>
+       <p>특별한 공간에서</p>
+       <span>서울 특별시에서 운영중인 <span>한강자전거공방</span>에 조그만 팝업매장이 꾸려져 있습니다.<br> 자전거가 태어나는 과정을 이 특별한 공간에서 경험해보시길 바랍니다.</span></div>
+       <div id="people_context" class = 'context'>
+       <p class="people_one"><span>Chief of Engineer <br> <span>Tony Choi</span> </span></p>
+       <p class="people_two"><span>Chief of builder <br> <span>stillman</span></span></p>
+       <p class="people_three"><span>Director <br> <span>Yucheol Jeong</span></span></p>
+       <span>엔지니어와 빌더, 그리고 디자이너의 조합은<br> 생각보다 멋진 제품을 만들어냅니다.</span>
+       </div>
+       <div id="people_context2">
+       <p class="people_one2"><span>Chief <br> of Engineer <br> <span>Tony Choi</span> </span></p>
+       <p class="people_two2"><span>Chief <br> of builder <br> <span>stillman</span></span></p>
+       <p class="people_three2"><span>Director <br> <span>Yucheol <br>Jeong</span></span></p>
+       <span>엔지니어와 빌더, 그리고 디자이너의 조합은<br> 생각보다 멋진 제품을 만들어냅니다.</span>
+       </div>
+       
+       
+      <footer>
+        
+        <span class="email">all@outfitters.co.kr</span>
+        <span class="call">070.8811.1975</span>
+        <span class="kakao">KakaoTalk <span>@아웃피터스</span></span>
+        <span class="map">map</span>
+        
+        <div class="place_map">
+        <p>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m21!1m12!1m3!1d3164.8157803909294!2d127.00047871944174!3d37.51226283837647!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m6!3e6!4m0!4m3!3m2!1d37.512024499999995!2d127.0011976!5e0!3m2!1sko!2skr!4v1482462700491&zoom=17" width="100%" height="100%" frameborder="0" style="border:0" allowfullscreen></iframe>
+        </p>
+        <div>
+            <span class="workshop">한강자전거공방</span>
+            <span class="subway">고속버스터미널역 8-2번 출구 도보 5분</span>
+            <span class="car">자차이용시&nbsp;&nbsp; "신반포2차아파트109동"</span>
+        </div>
+        </div>
+        <script>
+          $(function(){
+              
+              var ccc ='2';
+           $('.map').on('click',function(){
+               if(ccc==2){$('.place_map').animate({'top':'0px'},800,'easeOutQuint')
+                ccc='1';
+             
+               }else{$('.place_map').animate({'top':'-100%'},800,'easeOutQuint')
+                ccc='2';
+                }
+            })
+           
+           $('.place_map').on('click',function(){
+               $('.place_map').animate({'top':'-100%'},800,'easeOutQuint')
+                ccc='2';
+            })
+           })
+        </script>
+    </footer>
+</body>
+</html>

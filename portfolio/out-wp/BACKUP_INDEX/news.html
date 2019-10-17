@@ -1,0 +1,417 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no">
+    <title>Document</title>
+    <link href="https://opensource.keycdn.com/fontawesome/4.7.0/font-awesome.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/total.css">
+    <script type='text/javascript' src="js/prefixfree.min.js"></script>
+    <script src="http://code.jquery.com/jquery-latest.min.js"></script>
+    <script src="https://code.jquery.com/ui/1.11.4/jquery-ui.min.js"></script>
+    <script src="js/jquery.easing.1.3.js"></script>
+    <script src="/js/jquery.bxslider.min.js"></script>
+    <link href="/css/jquery.bxslider.css" rel="stylesheet" />
+      <script>
+       $(function(){
+          
+           
+            var div = $("#specialty_sub1");
+            var div2 = $("#specialty_sub2");
+            var div3 = $('#specialty_sub');
+            var print_context = $('#print_context1');
+            var customeee = $('#custom_context');
+            var customeee_cover = $('#custom_context_cover');
+            var divv = '1';
+            var ccc = '1';
+            var aaa = '2';
+            var bbb = '2';
+            var cccc ='1';
+           
+           
+            
+          function remove(){
+               div.animate({'top':'-100%'},800,'easeOutQuint')
+               div2.animate({'top':'-100%'},800,'easeOutQuint')
+               div.animate({'height':'50%'})
+               div2.animate({'height':'50%'})
+               div.animate({'right':'50%'})
+               div2.delay(400).animate({'left':'50%'})
+               $('#direction>ul>.bar').css({'background':'#fff'})
+               $('#direction>ul>.sub,.email,.call').css({'color':'#fff'})
+               $('#direction>ul>.big').css({'color':'#000'})
+               divv = '1';
+               div3.animate({'bottom':'-50%'},800,'easeOutQuint')
+               aaa = '2';
+               $('#direction>ul>.bar').css({'background':'#000'})
+               $('#direction>ul>.sub,.email,.call').css({'color':'#000'})
+               color_b();
+               print_context.hide();
+            }
+           
+           function remove_custom(){
+               
+               customeee.animate({'top':'100%','height':'50%'})
+               customeee_cover.animate({'bottom':'100%','height':'50%'})
+               cccc='1';
+               ccc= '1';
+               
+            }
+           
+           
+           
+           
+           function color_w(){
+                $('#gnb>p').css({'background':'#fff'})
+                $('#gnb>span,#gnb>div>span>a').css({'color':'#fff'})
+                $('header>a').css({'background':'url(/img/logo_w.png)no-repeat center center'})
+
+           }
+           
+           
+           function color_b(){
+                $('#gnb>p').css({'background':'#000'})
+                $('#gnb>span,#gnb>div>span>a').css({'color':'#000'})
+                $('header>a').css({'background':'url(/img/logo.png)no-repeat center center'})
+
+           }
+           
+           
+                      
+           $('.sub').on('mouseover', function(appear){
+             $('.big>span').css({
+                 'width':'10px',
+                 'transition':'0.5s'
+                })
+             $('.bar').css({
+                 'width':'10px',
+                 'transition':'0.5s'
+                })
+             $('.big>p').css({
+                 'opacity':'1',
+                 'transition':'0.5s'
+                })
+           })
+            
+           $('.sub').on('mouseout', function(disappear){
+             $('.big>span').css({
+                 'width':'60px',
+                 'transition':'1s'
+                })
+             $('.big>p').css({
+                 'opacity':'0',
+                 'transition':'0.5s'
+                })
+             $('.bar').css({
+                 'width':'50px',
+                 'transition':'0.5s'
+                })
+             
+           })
+            
+           
+           $('#sub_about').on('click',function(){
+               $('body').removeClass('printbg')
+               $('body').removeClass('custombg')
+               $('body').removeClass('peoplebg')
+               $('body').addClass('aboutbg')
+               remove();
+               remove_custom();
+               bbb='2';
+               aaa='2';
+           })
+           
+           
+           $('#sub_product').on('click',function(){
+               $('body').removeClass('printbg')
+               $('body').removeClass('custombg')
+               $('body').removeClass('peoplebg')
+               $('body').addClass('aboutbg')
+               $('.specialty_stainless').hide();
+               $('.specialty_carbon').hide();
+               print_context.hide();
+               remove_custom();
+            if(aaa==2){   
+              div.animate({'top':'0px'},800,'easeOutQuint')
+              div2.animate({'top':'0px'},800,'easeOutQuint') 
+              div3.animate({ 'bottom':'0px'},{duration:800, queue:false},'easeOutQuint')
+              $('#direction>ul>.bar').css({'background':'#fff'})
+              $('#direction>ul>.big,.sub,.email,.call').css({'color':'#fff'})
+              color_w();     
+              bbb='2';
+              aaa = '1';
+            }else{
+               remove();
+           }
+           })
+           
+                
+           
+           div.click(function(){
+                
+                
+            if(divv==1){
+                div.stop().animate({width: '100%'});
+                div.animate({right:'0'}, "slow");
+                div.animate({height: '70%'}, "slow");
+                div2.delay(400).animate({left: '100%'}, "slow");
+                div3.delay(1000).animate({bottom:'-20%'},670)
+                $('.email,.call').css({'color':'#000','transition-delay':'1s'})    
+                $('.specialty_stainless').show();
+                divv = '2';
+             }else{
+                div.stop().animate({'height':'50%'})
+                div.animate({'right':'50%'})
+                div2.delay(400).animate({'left':'50%'})
+                div3.animate({bottom:'0'},400)
+                $('.email,.call').css({'color':'#fff','transition-delay':'1s'})
+                $('.specialty_stainless').hide();
+                divv = '1';
+                }
+               })
+             
+           div2.click(function(){
+                               
+            if(divv==1){
+                div2.stop().animate({width: '100%'});
+                div2.animate({left:'0'}, "slow");
+                div2.animate({height: '70%'}, "slow");
+                div.delay(400).animate({right: '100%'}, "slow");
+                div3.delay(1000).animate({bottom:'-20%'},670)
+                $('#direction>ul>.bar').css({'background':'#fff','transition-delay':'1s'})
+                $('#direction>ul>.big,.sub').css({'color':'#fff','transition-delay':'1s'})
+                $('.email,.call').css({'color':'#000','transition-delay':'1s'})
+                $('.specialty_carbon').show();
+                
+                divv = '2';
+             }else{
+                div2.stop().animate({'height':'50%'})
+                div2.animate({'left':'50%'})
+                div.delay(400).animate({'right':'50%'})
+                div3.animate({bottom:'0'},400)
+                $('#direction>ul>.bar').css({'background':'#fff'})
+                $('#direction>ul>.big,.sub,.email,.call').css({'color':'#fff'})
+                $('.specialty_carbon').hide();
+                
+                 divv = '1';
+                }
+               })
+           
+             
+               print_context.hide();
+           $('#sub_event').on('click',function(){
+               $('body').removeClass('aboutbg')
+               $('body').removeClass('peoplebg')
+               $('body').removeClass('custombg')
+               $('body').addClass('printbg');
+               remove();
+               remove_custom();
+               print_context.show();
+               
+           })
+           $('#sub_customizable').on('click',function(){
+               
+               $('body').removeClass('printbg')
+               $('body').removeClass('aboutbg')
+               $('body').removeClass('peoplebg')
+               $('body').addClass('custombg')
+               remove();
+               
+               if(ccc==1){
+                 customeee.animate({'top':'50%'})                  
+                 customeee_cover.animate({'bottom':'50%'})
+                 ccc= '2';  
+               }else{
+                 remove_custom();
+               }
+             })
+           
+           
+           customeee.on('click',function(){
+               
+               if(cccc==1){
+                   customeee.animate({'top':'-5%','height':'90%'})
+                   customeee_cover.animate({'bottom':'0','height':'30%'})
+                   cccc='2';
+               }else{
+                   remove_custom();
+               }
+               
+           })
+                     
+           $('#sub_people').on('click',function(){
+               $('body').removeClass('printbg')
+               $('body').removeClass('aboutbg')
+               $('body').removeClass('custombg')
+               $('body').addClass('peoplebg')
+               remove();
+               remove_custom();
+           })
+           
+            
+        $('.sub').on('click', function(appear){
+             $('.big>span').css({'width':'10px','transition':'0.5s'})
+             $('.bar').css({'width':'10px','transition':'0.5s'})
+             $('.big>p').css({'opacity':'1','transition':'0.5s'})
+           })
+        $('#gnb').on('click', function(){})
+        
+        $('.fa-y-combinator').on('mouseover',function(){
+            $('.kakao').css({'color':'#fedd00','transition':'0.5s'})
+            
+        })
+        $('.fa-y-combinator').on('mouseout',function(){
+           $('.kakao').css({'color':'#fff','transition':'0.5s'})
+            })
+       
+       $('.bxslider').bxSlider({
+          mode:'vertical', //default : 'horizontal', options: 'horizontal', 'vertical', 'fade'
+          speed:1000, 
+          auto: true,
+          captions: false,
+          autoControls: false
+            });
+       
+       
+       })
+      
+    </script>
+</head>
+<body id="body_news">
+   <ul class="bxslider">
+      <li><img src="/img/realmain.png" title="caption value pic1"/></li>
+      <li><img src="img/mainnn_up.png" title="caption value pic2"/></li>
+      
+    </ul>
+    
+<!-- 색깔바꾸기
+    <script>
+    $(function(){
+        $('#gnb>p,#direction>ul>.bar').css({
+            'background':'#fff'
+        })
+        $('#gnb>span,#gnb>div>span>a,#direction>ul>li,.email,.call').css({
+            'color':'#fff'
+        })
+        $('header>a').css({
+            'background':'url(/img/logo_w.png)no-repeat center center'
+        })
+        
+    })
+    </script>
+-->
+      
+      
+       <header><a href="http://fgobikes.co.kr/main.html"></a></header>
+       <section id='gnb'>
+       <p id='p1'></p>
+       <p id='p2'></p>
+       <span>menu</span>
+       <div>
+           <span><a href="http://fgobikes.co.kr/news.html">news</a></span>
+           <span><a href="http://fgobikes.co.kr/about.html">about</a></span>
+           <span><a href="http://fgobikes.co.kr/note.html">note</a></span>
+           <span><a href="http://fgobikes.co.kr/portfolio.html">portfolio</a></span>
+       </div>
+       
+       
+       </section>
+       <aside>
+       <a href="https://www.facebook.com/fgoutfitters/"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+       <a href="https://www.instagram.com/outfitters2017/"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+       <a href=""><i class="fa fa-y-combinator" aria-hidden="true"></i></a>
+       </aside>
+       
+       
+       <div id="direction">
+           <ul>
+               <li class="big" id="sub_about"><span>news</span><p>.</p></li>
+               <li class="bar"></li>
+               <li class="sub1 sub" id="sub_product"><span>product</span></li>
+               <li class="sub2 sub" id="sub_event"><span>event</span></li>
+               
+           </ul>
+       </div>
+       
+       <div id="specialty_sub">
+       <p id="specialty_sub3">조금은 특별하게.</p><span>Something Special </span>
+       <p class='specialty_stainless'><span>피팅-설계</span> 공정을 라이더와 함께 진행함으로써, <br>라이더의 창의적인 상상력을 현실화 시킨 세상에 하나뿐인 특별한 자전거를 만듭니다.
+          </p>
+        <p class='specialty_carbon'>저희는 현재 서울 특별시에서 운영중인 <span>한강자전거공방</span>에서<br>작업을 진행하고 있습니다. 작업의 모든 공정을 근거리에서 확인가능하십니다. 
+          </p>  
+       </div>
+       
+       
+       <div id="specialty_sub12_wrap">
+       
+               <div id="specialty_sub1"></div>
+       
+       </div>
+       
+       <div id="specialty_sub2">
+<!--
+           
+               <ul>
+                       <li><span>01</span>FITTING</li>
+                       <li><span>02</span>DESIGN</li>
+                       <li><span>03</span>BUILD</li>
+                   </ul>
+-->
+                   
+           
+       </div>
+       
+       <div id='print_context1'><p>Carbon 3D Printer</p><span>카본3D프린터는 프레임러그 및 각종 카본 제품을 제작하는데 쓰이며,<br>다양한 실험적 시도를 가능하게 합니다.</span></div>
+       
+       <div id="custom_context"></div>
+       <div id="custom_context_cover"></div>
+       
+       
+    <footer>
+        
+        <span class="email">all@outfitters.co.kr</span>
+        <span class="call">070.8811.1975</span>
+        <span class="kakao">KakaoTalk <span>@아웃피터스</span></span>
+        <span class="map">map</span>
+        
+        <div class="place_map">
+        <p>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m21!1m12!1m3!1d3164.8157803909294!2d127.00047871944174!3d37.51226283837647!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m6!3e6!4m0!4m3!3m2!1d37.512024499999995!2d127.0011976!5e0!3m2!1sko!2skr!4v1482462700491&zoom=17" width="100%" height="100%" frameborder="0" style="border:0" allowfullscreen></iframe>
+        </p>
+        <div>
+            <span class="workshop">한강자전거공방</span>
+            <span class="subway">고속버스터미널역 8-2번 출구 도보 5분</span>
+            <span class="car">자차이용시&nbsp;&nbsp; "신반포2차아파트109동"</span>
+        </div>
+        
+        
+        
+        
+        
+        </div>
+        <script>
+          $(function(){
+              
+              var ccc ='2';
+           $('.map').on('click',function(){
+               if(ccc==2){$('.place_map').animate({'top':'0px'},800,'easeOutQuint')
+                ccc='1';
+             
+               }else{$('.place_map').animate({'top':'-100%'},800,'easeOutQuint')
+                ccc='2';
+                }
+            })
+           
+           $('.place_map').on('click',function(){
+               $('.place_map').animate({'top':'-100%'},800,'easeOutQuint')
+                ccc='2';
+            })
+           })
+        </script>
+    </footer>
+    
+    
+    
+
+</body>
+</html>

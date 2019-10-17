@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no">
+    <title>outfitters</title>
+    <link href="https://opensource.keycdn.com/fontawesome/4.7.0/font-awesome.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/total.css">
+    <script type='text/javascript' src="js/prefixfree.min.js"></script>
+    <script src="http://code.jquery.com/jquery-latest.min.js"></script>
+    <script src="https://code.jquery.com/ui/1.11.4/jquery-ui.min.js"></script>
+    <script src="js/jquery.easing.1.3.js"></script>
+    
+    <script type="text/javascript">
+        var tag = document.createElement('script');
+        tag.src = "https://www.youtube.com/iframe_api";
+        var firstScriptTag = document.getElementsByTagName('script')[0];
+        firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+        var player;
+        function onYouTubeIframeAPIReady(){
+            player = new YT.Player('youtubePlayer');
+            $(".haejuk-video").on('click', function(){
+                $("#youtubePlayer").show();
+                    var timer = setInterval(function(){
+                    if( player.playVideo ){
+                    player.playVideo();
+                    clearInterval(timer);}
+                    }, 200);
+            });
+        }
+    </script>
+    <script>
+       $(function(){
+            var aaa = '2';
+            var bbb = '2';
+          
+           $('.sub').on('mouseover', function(appear){
+             $('.big>span').css({
+                 'width':'10px',
+                 'transition':'0.5s'
+                })
+             $('.bar').css({
+                 'width':'10px',
+                 'transition':'0.5s'
+                })
+             $('.big>p').css({
+                 'opacity':'1',
+                 'transition':'0.5s'
+                })
+           })
+            
+           $('.sub').on('mouseout', function(disappear){
+             $('.big>span').css({
+                 'width':'60px',
+                 'transition':'1s'
+                })
+             $('.big>p').css({
+                 'opacity':'0',
+                 'transition':'0.5s'
+                })
+             $('.bar').css({
+                 'width':'50px',
+                 'transition':'0.5s'
+                })
+             
+           })
+            
+           
+           $('#sub_home').on('click',function(){
+               
+               $('.addpic').animate({
+                   'bottom':'-100%'
+                },800,'easeOutQuint')
+                              
+               $('.addpic2').animate({
+                   'top':'-50%'
+                },800,'easeOutQuint')
+                
+               $('.addpic_text').animate({
+                   'top':'-100%'
+                },800,'easeOutQuint')
+               
+                
+                $('.addpic3').animate({
+                   'right':'-50%'
+                },800,'easeOutQuint')
+                              
+               $('.addpic4>iframe').animate({
+                   'left': '-9999px'
+                },800,'easeInSine')
+                             
+               bbb='2';
+               aaa='2';
+           })
+           
+           
+           $('#sub_build').on('click',function(){
+            if(aaa==2){   
+            $('.addpic').animate({
+                   'bottom':'0px'
+                },800,'easeOutQuint')
+            
+            $('.addpic_text').animate({
+                   'top':'25%'
+                },800,'easeOutQuint')
+            
+            $('.add1').removeClass('add1_1')
+            $('.add2').removeClass('add1')
+            $('.add4').removeClass('add3')
+            $('.add4').addClass('add1')
+            
+            
+               $('.addpic2').animate({
+                   'top':'0px'
+                },800,'easeOutQuint')
+               
+               $('.addpic3').animate({
+                   'right':'-50%'
+                },800,'easeOutQuint')
+                              
+               $('.addpic4>iframe').animate({
+                   'left':'-9999px'
+                },800,'easeInSine')
+                             
+               bbb='2';
+               aaa = '1';
+                
+            }else{
+                $('.addpic').animate({
+                   'bottom':'-100%'
+                },800,'easeOutQuint')
+                              
+               $('.addpic2').animate({
+                   'top':'-50%'
+                },800,'easeOutQuint')
+               
+               $('.addpic_text').animate({
+                   'top':'-100%'
+                },800,'easeOutQuint')
+               
+               
+               
+               aaa='2';
+                
+               
+            }
+           })
+           
+           $('#sub_make').on('click',function(){
+               if(bbb==2){   
+            $('.addpic3').animate({
+                   'right':'0px'
+                },800,'easeOutQuint')
+                              
+               $('.addpic4>iframe').animate({
+                   'left':'0px'
+                },500,'easeOutQuint')
+               
+                $('.addpic').animate({
+                   'bottom':'-100%'
+                },800,'easeOutQuint')
+                
+                $('.addpic_text').animate({
+                   'top':'25%'
+                },800,'easeOutQuint')
+                
+               $('.addpic2').animate({
+                   'top':'-50%'
+                },800,'easeOutQuint')
+               
+               $('.addpic_text>.add1').addClass('add1_1')
+               $('.add2').addClass('add1')
+               $('.add4').addClass('add3')
+               
+               aaa='2';
+               bbb='1';
+                   
+                
+            }else{
+                $('.addpic3').animate({
+                   'right':'-50%'
+                },800,'easeOutQuint')
+                              
+               $('.addpic4>iframe').animate({
+                   'left':'-9999px'
+                },800,'easeInSine')
+               
+               $('.addpic_text').animate({
+                   'top':'-100%'
+                },800,'easeOutQuint')
+               
+               bbb='2';
+            }
+               
+           })
+           $('#sub_customizable').on('click',function(){
+               $('body').css({
+                   'background':'url(/img/specialty.png)no-repeat center center',
+                   'transition':'0.3s'
+               })
+           })
+           $('#sub_people').on('click',function(){
+               $('body').css({
+                   'background':'url(/img/main.png)no-repeat center center',
+                   'transition':'0.3s'
+               })
+           })
+           
+            
+        $('.sub').on('click', function(appear){
+             $('.big>span').css({
+                 'width':'10px',
+                 'transition':'0.5s'
+                })
+             $('.bar').css({
+                 'width':'10px',
+                 'transition':'0.5s'
+                })
+             $('.big>p').css({
+                 'opacity':'1',
+                 'transition':'0.5s'
+                })
+           })
+        $('#gnb').on('click', function(){
+           
+           })
+        
+        $('.fa-y-combinator').on('mouseover',function(){
+            $('.kakao').css({
+                'color':'#fedd00',
+                'transition':'0.5s'})
+            
+        })
+        $('.fa-y-combinator').on('mouseout',function(){
+           $('.kakao').css({
+                'color':'#fff',
+                'transition':'0.5s'})
+            })
+       })
+    </script>
+</head>
+<body id="body_home">
+    
+    <script>
+    $(function(){
+        $('#gnb>p,#direction>ul>.bar').css({
+            'background':'#fff'
+        })
+        $('#gnb>span,#gnb>div>span>a,#direction>ul>li,.email,.call').css({
+            'color':'#fff'
+        })
+        $('header>a').css({
+            'background':'url(/img/logo_w.png)no-repeat center center'
+        })
+        
+    })
+    </script>
+      
+      
+       <header><a href="http://fgobikes.co.kr/main.html"></a></header>
+       <section id='gnb'>
+       <p id='p1'></p>
+       <p id='p2'></p>
+       <span>menu</span>
+       <div>
+           
+           <span><a href="http://fgobikes.co.kr/about.html">about</a></span>
+           <span><a href="http://fgobikes.co.kr/note.html">note</a></span>
+           <span><a href="http://fgobikes.co.kr/portfolio.html">portfolio</a></span>
+       </div>
+       
+       
+       </section>
+       <aside>
+       <a href="https://www.facebook.com/fgoutfitters/"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+       <a href="https://www.instagram.com/outfitters2017/"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+       <a href=""><i class="fa fa-y-combinator" aria-hidden="true"></i></a>
+       </aside>
+       
+       <div id="direction">
+           <ul>
+               <li class="big" id="sub_home"><span>news</span><p>.</p></li>
+               <li class="bar"></li>
+               <li class="sub1 sub" id="sub_build"><span>build</span></li>
+               <li class="sub2 sub haejuk-video" id="sub_make"><span>make</span></li>
+<!--
+               <li class="sub3 sub" id="sub_customizable"><span>customizable</span></li>
+               <li class="sub4 sub" id="sub_people"><span>people</span></li>
+-->
+           </ul>
+       </div>
+   
+       <div class ="addpic"></div>
+       <p class="addpic_text">저희는<br>자전거<span class="add1">문화</span>를<br>만들고 있습니다<br>
+          <span class="addpic_text2">We <span class="add2">Build</span><span class="add4">Make</span> the Bicycle</span></p>
+       <div class ="addpic2"></div>
+       
+       <div class ="addpic4">
+       <iframe id="youtubePlayer" class="mvclip" style="width: 1920px; height: 1080px;" frameborder="0" allowfullscreen="1" title="YouTube video player" width="640" height="360" src="https://www.youtube.com/embed/_H9nWY7yMcY?controls=0&loop=1&showinfo=0&playlist=_H9nWY7yMcY&enablejsapi=1"></iframe></div>
+      <div class ="addpic3"></div>
+      
+<!--      src="https://www.youtube.com/embed/_H9nWY7yMcY?controls=0&amp&&loop=1&playlist=_H9nWY7yMcY;showinfo=0&amp;modestbranding=1&amp;wmode=transparent&amp;enablejsapi=1&amp;origin=http%3A%2F%2Flinepluscorp.com&amp;widgetid=1"-->
+
+    <!--src="https://www.youtube.com/embed/_H9nWY7yMcY?controls=0&&loop=1&list=PLItvsOiNiIf6xTswpuiBMKiv_J-D-g-vW&enablejsapi=1"
+     --> 
+ <footer>
+        
+        <span class="email">all@outfitters.co.kr</span>
+        <span class="call">070.8811.1975</span>
+        <span class="kakao">KakaoTalk <span>@아웃피터스</span></span>
+        <span class="map">map</span>
+        
+        <div class="place_map">
+        <p>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m21!1m12!1m3!1d3164.8157803909294!2d127.00047871944174!3d37.51226283837647!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m6!3e6!4m0!4m3!3m2!1d37.512024499999995!2d127.0011976!5e0!3m2!1sko!2skr!4v1482462700491&zoom=17" width="100%" height="100%" frameborder="0" style="border:0" allowfullscreen></iframe>
+        </p>
+        <div>
+            <span class="workshop">한강자전거공방</span>
+            <span class="subway">고속버스터미널역 8-2번 출구 도보 5분</span>
+            <span class="car">자차이용시&nbsp;&nbsp; "신반포2차아파트109동"</span>
+            
+        </div>
+        </div>
+        <script>
+          $(function(){
+          var ccc ='2';
+           $('.map').on('click',function(){
+               if(ccc==2){   
+            $('.place_map').animate({
+                   'top':'0px'
+                },800,'easeOutQuint')
+            ccc='1';
+             
+            }else{
+                $('.place_map').animate({
+                   'top':'-100%'
+                },800,'easeOutQuint')
+                ccc='2';
+                }
+            })
+           
+           $('.place_map').on('click',function(){
+               $('.place_map').animate({
+                   'top':'-100%'
+                },800,'easeOutQuint')
+                ccc='2';
+            })
+                 
+           })
+        </script>
+    </footer>
+    
+    
+    
+
+</body>
+</html>

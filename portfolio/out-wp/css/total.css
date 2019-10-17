@@ -1,0 +1,709 @@
+@charset : 'utf-8';
+@import url('https://fonts.googleapis.com/css?family=Open+Sans');
+/*'Open Sans', sans-serif;*/
+@import url('https://fonts.googleapis.com/css?family=Noto+Sans:400,700');
+/*'Noto Sans', sans-serif;*/
+@import url(http://fonts.googleapis.com/earlyaccess/nanummyeongjo.css);
+/*'Nanum Myeongjo', serif;*/
+*{margin: 0;border: 0;padding: 0; font-family:'Noto Sans', sans-serif; }
+ul,li{list-style: none;}
+a {text-decoration: none; color: black;}
+html{scrollbar-3dLight-Color: #ebebeb; scrollbar-arrow-color: #ebebeb; scrollbar-base-color: #ebebeb; scrollbar-Face-Color: #ebebeb; scrollbar-Track-Color: #ebebeb; scrollbar-DarkShadow-Color: #ebebeb; scrollbar-Highlight-Color: #ebebeb; scrollbar-Shadow-Color: #ebebeb}
+html,body{height: 100%;overflow: hidden;background-size: cover;}
+body{width: 100%;height: 100%; background: #141414;}
+#body_process{background: #e5e5e5;}
+#body_news{background: #e5e5e5;}
+#body_portfolio{background: #fff;}
+.body_black{background: #000;}
+/*중앙로고*/
+header>a{width: 62px;height: 54px;background: url(/out-wp/img/logo.png)no-repeat center center; position: fixed; top: 80px;left: 50%;margin-left: -31px;z-index: 10;}
+
+/*좌측메뉴*/
+#gnb{width: 410px;height: 20px;position:fixed; top: 100px; left:100px;z-index: 10;cursor:pointer;}
+#gnb>#p1{width: 12px;height: 1px;background: #000;margin: 3px 0;}
+#gnb>#p2{width: 8px;height: 1px;background: #000;margin: 3px 0;}
+#gnb>span{display: inline-block;color: #000;position: absolute; top: -6px; left: 57px;}
+
+@keyframes move {
+    0%   {transform: scaleX(1);}
+    100% {transform: scaleX(2);}
+}
+#gnb:hover #p1{
+    transform-origin: left;
+    animation: move 0.3s infinite alternate;
+}
+#gnb:hover #p2{
+    transform-origin: left;
+    animation: move 0.4s infinite alternate;
+}
+
+#gnb>div{position: absolute; top: -6px;left: 57px;width: 300px;}
+#gnb>div>span{float: left;margin-right: 10px;font-weight: 700;}
+#gnb>div>span>a:hover {text-decoration: underline;}
+
+
+/*상단SNS메뉴*/
+
+aside{width: 80px;height: 25px;position: fixed;top: 100px;right: 100px;padding: 0 0 0 10px;cursor: pointer;z-index: 10}
+.fa-facebook{display: inline-block; width: 20px;height: 21px;color:#fff;font-size: 18px;transition:all 0.3s}
+.fa-instagram{display: inline-block;width: 20px;height: 20px;color:#fff;font-size: 18px;padding-right: 4px;transition:all 0.3s}
+.fa-y-combinator{display: inline-block;width: 20px;height: 21px;color:#fff;font-size: 18px;transition:all 0.3s}
+.fa-facebook:hover{transform: scale(1.4);transform-origin: center;transition:all 0.3s}
+.fa-instagram:hover{transform: scale(1.4);transform-origin: center;transition:all 0.3s}
+.fa-y-combinator:hover{transform: scale(1.4);transform-origin: center; transition:all 0.3s;color: #fedd00; }
+
+
+
+
+/*중앙메뉴*/
+/*home*/
+#direction{height: 35px;position: fixed; left: 100px;bottom: 50%;z-index: 10}
+
+#direction>ul{}
+#direction>ul>li{}
+.big{font-weight: 700;cursor: pointer;}
+.big>span{display: inline-block;width: 60px;overflow: hidden;}
+.big>p{display: inline-block; opacity: 0;}
+.bar{width: 50px;height: 1px;margin: 12px 0px 12px 0px;background-color: black;}
+.d{display: inline-block;width: 11px;transition: all 0.3s;overflow: hidden;}
+#sub_portfolio>span{width: 75px;}
+
+.sub{margin-right: 8px;}
+.sub span{display: inline-block; transition: all 1s; overflow: hidden;cursor: pointer;}
+.sub:after{content: " .";}
+.sub:hover{transition: all 0.5s}
+.sub_pro{color: #3e3e3e;}
+.sub_pro:hover span{font-weight: 700;}
+
+
+#sub_customizable>span{width: 8px;}
+#sub_customizable:hover span{width: 65px;}
+#sub_tech>span{width: 6px;}
+#sub_tech:hover span{width: 40px;}
+#sub_printer>span{width: 10px;}
+#sub_printer:hover span{width: 60px;}
+#sub_specialty>span{width: 8px;}
+#sub_specialty:hover span{width: 70px;}
+#sub_people>span{width: 10px;}
+#sub_people:hover span{width: 55px;}
+#sub_product>span{width: 10px;}
+#sub_product:hover span{width: 65px;}
+#sub_event>span{width: 9px;}
+#sub_event:hover span{width: 45px;}
+#sub_next>span{width:10px}
+#sub_next:hover span{width:45px;}
+#sub_prev>span{width:10px;height: 22px;}
+#sub_prev:hover span{width:45px;}
+
+
+/*main*/
+#event_context{height: 20%;position: fixed; top:100%;margin-left: 20%;}
+#event_context>p{font: bold 52px/70px 'Nanum Myeongjo', serif; color: #fff;}
+#event_context>span{font:20px/30px 'Noto Sans', sans-serif;letter-spacing: -1px; color: #fff}
+.bxslider>li{background: #e5e5e5;}
+
+/*about*/
+#about_context{height: 20%;position: fixed; top:50%;margin-left: 20%;}
+#about_context>p{font: bold 52px/70px 'Nanum Myeongjo', serif; color: #fff;}
+#about_context>span{font:20px/30px 'Noto Sans', sans-serif;letter-spacing: -1px; color: #fff}
+
+/*about-custom*/
+.custombg{width: 100%;height: 100%; background: url(/out-wp/img/custommoving.gif)no-repeat center center;transition: all 0.3s;}
+#custom_context{height: 20%;position: fixed; top:100%;margin-left: 20%;z-index: 100;}
+#custom_context>p{font: bold 52px/70px 'Nanum Myeongjo', serif; color: #fff;}
+#custom_context>span{font:20px/30px 'Noto Sans', sans-serif;letter-spacing: -1px; color: #fff}
+#custom_context_cover{width: 100%;height: 100%;position: fixed; bottom:100%;background-color: rgba(0,0,0,0.5);}
+
+/*about-tech*/
+.techbg{width: 100%;height: 100%; background: url(/out-wp/img/mainnn.png)no-repeat center center;transition: all 0.3s;}
+#tech_context{height: 60%;width: 60%;position: fixed; top:100%;margin-left: 20%;}
+#tech_context>section{width: 200px;height: 200px;}
+#tech_context>.tech_step1{background: url(/out-wp/img/step1.gif)no-repeat center center;}
+#tech_context>.tech_step2{background: url(/out-wp/img/step2.gif)no-repeat center center;}
+#tech_context>span{display: inline-block;width: 220px; font:16px/22px 'Noto Sans', sans-serif;letter-spacing: -1px; color: #fff;margin: 15px 0;}
+#tech_context>.tech_step1_context{display: none;}
+#tech_context>.tech_step2_context{display: none;}
+
+#tech_context>p{font: bold 32px/70px 'Nanum Myeongjo', serif; color: #fff;}
+#tech_context>article{display: inline-block; width: 75%; height: 100%;position: absolute; top:12%;left: 27%; font:20px/30px 'Noto Sans', sans-serif;letter-spacing: -1px; color: #fff;text-align: justify;overflow: auto;padding: 0 10px 0 0;font-weight: 400;}
+#tech_context>article>span{font-size: 14px;}
+#tech_context>article>.tech_brand{font: bold 20px/30px 'Nanum Myeongjo', serif;}
+
+
+/*about-print3d*/
+.printbg{width: 100%;height: 100%; background: url(/out-wp/img/print3d.png)no-repeat center center;transition: all 0.3s;}
+#print_context{height: 20%;position: fixed; top:100%;margin-left: 20%;}
+#print_context>p{font: bold 52px/70px 'Nanum Myeongjo', serif; color: #fff;}
+#print_context>span{font:20px/30px 'Noto Sans', sans-serif;letter-spacing: -1px; color: #fff}
+
+/*about-specialty*/
+.specialtybg{width: 100%;height: 100%; background: url(/out-wp/img/specialty_place.png)no-repeat center center;transition: all 0.3s;}
+#specialty_context{height: 20%;position: fixed; top:100%;margin-left: 20%;}
+#specialty_context>p{font: bold 52px/70px 'Nanum Myeongjo', serif; color: #fff;}
+#specialty_context>span{font:20px/30px 'Noto Sans', sans-serif;letter-spacing: -1px; color: #fff}
+#specialty_context>.cover{width: 100%;height: 100%;background: #000;opacity: 0.5;display: none;position: fixed;top:100%;left: 0;z-index: -1;}
+
+/*about-people*/
+.peoplebg{width: 100%;height: 100%; background: url(/out-wp/img/peoplebg.png)no-repeat center center;transition: all 0.3s;}
+#people_context{height: 20%;position: fixed; top:100%;margin-left: 20%;}
+
+#people_context>p{display: inline-block; width: 210px;height: 150px;}
+#people_context>span{display: block; font:20px/30px 'Noto Sans', sans-serif;letter-spacing: -1px; color: #fff;margin-top: 20px;}
+#people_context>p>span{display: inline-block;width: 150px;height: 50px; font:18px/24px 'Noto Sans', sans-serif;letter-spacing: -1px; color: #fff;padding: 150px 0 0 0;}
+#people_context>p>span>span{font: bold 20px/28px 'Noto Sans', sans-serif;letter-spacing: -1px; color: #fff}
+#people_context>.people_one{background: url(/out-wp/img/people_one.png)no-repeat center center;}
+#people_context>.people_two{background: url(/out-wp/img/people_two.png)no-repeat center center;}
+#people_context>.people_three{background: url(/out-wp/img/people_three.png)no-repeat center center;}
+#people_context2{display: none;}
+
+/*about-*/
+
+/*process*/
+.process_img00{width: 50%;height: 100%;position: fixed;top: 0;left: 50%; z-index: 1;background: url(/out-wp/img/realmain.png)no-repeat center center;}
+.process_img01{width: 50%;height: 100%;background: url(/out-wp/img/system01.png)no-repeat center center;position: fixed;top: 0;left: 0%; z-index: 1;}
+.process_img02{width: 50%;height: 100%;background: url(/out-wp/img/system02.png)no-repeat center center;position: fixed;top: 0;left:0%; z-index: 1;}
+.process_img03{width: 50%;height: 100%;background: url(/out-wp/img/system03.png)no-repeat center center;position: fixed;top: 0;left: 0%; z-index: 1;}
+.process_img04{width: 50%;height: 100%;background: url(/out-wp/img/system04.png)no-repeat center center;position: fixed;top: 0;left: 0%; z-index: 1;}
+.process_img05{width: 50%;height: 100%;background: url(/out-wp/img/system05.png)no-repeat center center;position: fixed;top: 0;left:0%; z-index: 1;}
+#process_bg{width: 50%;height: 100%;position: fixed;top: 0;left: 0;background: #e5e5e5;z-index: 2;}
+.process_text00{height: 20%;position: fixed; top:45%;margin-left: 20%;font: bold 52px/60px 'Nanum Myeongjo', serif; color: #000;}
+.process_text{width: 25%;height: 20%;position: fixed; top:100%;margin-left: 20%;font:20px/30px 'Noto Sans', sans-serif;letter-spacing: -1px; color: #000;z-index: 3}
+.process_num{height: 20%;position: fixed; top:40%;left: 22%;font: bold 300px/70px 'Nanum Myeongjo', serif; color: #fff;opacity: 0;z-index: 2}
+.process_title{position: fixed;top:40%;left: 22%; font: bold 28px/40px 'Noto Sans', sans-serif;letter-spacing: -1px; color: #000;opacity: 0; z-index: 3;}
+.process_bar{width: 50px;height: 3px;background: #000;position: fixed; top:45%;left: 22%;opacity: 0; z-index: 3;}
+.process_text00_425{display: none;}
+.process_img425{display:none;}
+.process_title425{display: none;}
+.process_num425{display: none;}
+.process_bar425{display: none;}
+
+/*portfolio*/
+.main>section{background: #e5e5e5;}
+#portfolio_pic1{width: 50%;height: 50%; float: right; background: url(/out-wp/img/portfolio_pic1.png)no-repeat center center;}
+#portfolio_context1{height: 20%;margin-top:25%;margin-left: 20%;}
+#portfolio_context1>p{font: bold 52px/70px 'Noto Sans', sans-serif; color: #000;}
+#portfolio_context1>span{font:20px/30px 'Noto Sans', sans-serif;letter-spacing: -1px; color: #000}
+
+#portfolio_pic2{width: 50%;height: 50%; float: right;background: url(/out-wp/img/portfolio_pic2.png)no-repeat center center;}
+#portfolio_context2{height: 20%; margin-top:25%;margin-left: 20%;}
+#portfolio_context2>p{font: bold 52px/70px 'Noto Sans', sans-serif; color: #000;}
+#portfolio_context2>span{font:20px/30px 'Noto Sans', sans-serif;letter-spacing: -1px; color: #000}
+
+#portfolio_pic3{width: 100%;height: 50%;float: right;background: url(/out-wp/img/portfolio_pic4.png)no-repeat center center;}
+#portfolio_context3{height: 20%; top:50%;margin-left: 20%;}
+#portfolio_context3>p{font: bold 52px/70px 'Noto Sans', sans-serif; color: #000;}
+#portfolio_context3>span{font:20px/30px 'Noto Sans', sans-serif;letter-spacing: -1px; color: #000}
+
+#portfolio_pic4{width: 50%;height: 50%; float: right;background: url(/out-wp/img/portfolio_pic6.png)no-repeat center center;}
+#portfolio_context4{height: 20%; margin-top:25%;margin-left: 20%;}
+#portfolio_context4>p{font: bold 52px/70px 'Noto Sans', sans-serif; color: #000;}
+#portfolio_context4>span{font:20px/30px 'Noto Sans', sans-serif;letter-spacing: -1px; color: #000}
+
+#portfolio_pic5{width: 50%;height: 50%; float: right;background: url(/out-wp/img/portfolio_pic5.png)no-repeat center center;}
+#portfolio_context5{height: 20%; margin-top:25%;margin-left: 20%;}
+#portfolio_context5>p{font: bold 52px/70px 'Noto Sans', sans-serif; color: #000;}
+#portfolio_context5>span{font:20px/30px 'Noto Sans', sans-serif;letter-spacing: -1px; color: #000}
+
+#portfolio_pic6{width: 100%;height: 50%; float: right;background: url(/out-wp/img/portfolio_pic8_1.png)no-repeat center center;}
+#portfolio_context6{height: 20%; margin-top:25%;margin-left: 20%;}
+#portfolio_context6>p{font: bold 52px/70px 'Noto Sans', sans-serif; color: #000;}
+#portfolio_context6>span{font:20px/30px 'Noto Sans', sans-serif;letter-spacing: -1px; color: #000}
+.Pcontext>p{display: block !important;position: absolute; top: 52%;}
+.Pcontext>span{position: absolute; top: 60%;}
+
+
+#count1{
+  position: fixed; top: 20%;left: 20%;
+  display: table-cell;
+  margin:1.5%;
+  font-size:50px;color: #fff;
+  background-color: #FF6F6F;
+  width:50px;
+  border-radius: 50%;
+  height:50px;
+  vertical-align: middle;
+}
+#count2{
+  position: fixed; top: 25%;left: 20%;
+  display: table-cell;
+  margin:1.5%;
+  font-size:50px;color: #fff;
+  background-color: #FF6F6F;
+  width:50px;
+  border-radius: 50%;
+  height:50px;
+  vertical-align: middle;
+}
+#count3{
+  position: fixed; top: 30%;left: 20%;
+  display: table-cell;
+  margin:1.5%;
+  font-size:50px;color: #fff;
+  background-color: #FF6F6F;
+  width:50px;
+  border-radius: 50%;
+  height:50px;
+  vertical-align: middle;
+}
+
+
+::-webkit-scrollbar {width: 8px; height: 8px; }
+::-webkit-scrollbar-thumb {background: rgba(255, 255, 255, 0.8);}
+
+/*푸터*/
+footer{font: bold 16px/20px 'Noto Sans', sans-serif;}
+.email{position: fixed; bottom: 90px;left: 100px; letter-spacing: 0px;z-index: 10}
+.call{position: fixed; bottom: 90px;left: 50%;margin-left: -55px;z-index: 10}
+.kakao{position: fixed; bottom: 90px; right: 100px;color: #fff; font-weight: 100;z-index: 10}
+.kakao>span{letter-spacing: -1px; font-weight: 700;}
+.map{position: fixed; bottom: 120px; right: 100px; color: #fff; text-decoration: underline;cursor: pointer;z-index: 10;}
+.place_map{width: 100%;height: 100%;background-color: rgba(0, 0, 0, 0.8);position: fixed; top:-100%; z-index: 100;}
+.place_map>p{width: 75%;height: 60%;margin: 50px auto;}
+.place_map>p:after{
+  display: inline-block;
+    content: "\00d7";
+    font-size: 25px;
+    color: #fff;
+    float: right;
+    cursor: pointer;
+}
+
+.place_map>div{width: 300px;height: 50px;color: #fff;margin: 0 auto;}
+.place_map>span{}
+
+.place_map>div>.workshop{border: 1px solid #fff; border-radius: 2px;padding: 5px 10px;box-sizing: border-box;box-sizing: padding-box;font-weight: 800;margin: 10px auto;}
+.place_map>div>.subway{display: block;margin: 10px auto 0px auto;}
+.place_map>div>.car{display: block;margin: 0px auto;}
+
+  
+    
+
+/*미디어쿼리*/
+@media all and (min-width:2100px){
+    aside>a>.fa-facebook,aside>a>.fa-instagram,aside>a>.fa-y-combinator{color: #000;}
+    .kakao{color: #000;}
+    .map{color: #000;}
+}
+    
+@media all and (max-width:1440px) and (min-width:1281px){
+    
+    .pp1{content: url('/out-wp/img/main_product1_1440.png');} 
+/*    about*/
+    .custombg{width: 100%;height: 100%; background: url(/out-wp/img/custommoving_1440.gif)no-repeat center center;transition: all 0.3s;}
+    .techbg{width: 100%;height: 100%; background: url(/out-wp/img/process_1440.png)no-repeat center center;transition: all 0.3s;}
+    #tech_context>p{font: bold 26px/40px 'Nanum Myeongjo', serif; color: #fff;}
+    #tech_context>span{display: inline-block;width: 210px; font:14px/18px 'Noto Sans', sans-serif;letter-spacing: -1px; color: #fff;margin: 5px 0;}
+    #tech_context>article{display: inline-block; width: 85%; height: 100%;position: absolute; top:7%;left: 30%; font:20px/30px 'Noto Sans', sans-serif;letter-spacing: -1px; color: #fff;text-align: justify;overflow: auto;padding: 0 50px 0 0;font-weight: 400;}
+    
+    .printbg{width: 100%;height: 100%; background: url(/out-wp/img/print3d_1440.png)no-repeat center center;transition: all 0.3s;}
+    .specialtybg{width: 100%;height: 100%; background: url(/out-wp/img/specialty_1440.png)no-repeat center center;transition: all 0.3s;}
+    .peoplebg{width: 100%;height: 100%; background: url(/out-wp/img/people_1440.png)no-repeat center center;transition: all 0.3s;}
+    
+}
+@media all and (max-width:1280px) and (min-width:1025px){
+    
+    
+    .pp1{content: url('/out-wp/img/main_product1_1280.png');} 
+/*    about*/
+    .custombg{width: 100%;height: 100%; background: url(/out-wp/img/custommoving_1440.gif)no-repeat center center;transition: all 0.3s;}
+    .techbg{width: 100%;height: 100%; background: url(/out-wp/img/process_1280.png)no-repeat center center;transition: all 0.3s;}
+    
+    #tech_context>section{width: 150px;height: 150px;}
+    #tech_context>p{font: bold 20px/40px 'Nanum Myeongjo', serif; color: #fff;}
+    #tech_context>.tech_step1{background: url(/out-wp/img/step1_150.gif)no-repeat center center;}
+    #tech_context>.tech_step2{background: url(/out-wp/img/step2_150.gif)no-repeat center center;}
+    #tech_context>span{display: inline-block;width: 185px; font:14px/18px 'Noto Sans', sans-serif;letter-spacing: -1px; color: #fff;margin: 5px 0 10px 0;}
+    #tech_context>article{display: inline-block; width: 85%; height: 95%;position: absolute; top:7%;left: 30%; font:20px/30px 'Noto Sans', sans-serif;letter-spacing: -1px; color: #fff;text-align: justify;overflow: auto;padding: 0 50px 0 0;font-weight: 400;}
+    
+    .printbg{width: 100%;height: 100%; background: url(/out-wp/img/print3d_1280.png)no-repeat center center;transition: all 0.3s;}
+    .specialtybg{width: 100%;height: 100%; background: url(/out-wp/img/specialty_1280.png)no-repeat center center;transition: all 0.3s;}
+    .peoplebg{width: 100%;height: 100%; background: url(/out-wp/img/people_1280.png)no-repeat center center;transition: all 0.3s;}
+    .process_num{height: 20%;position: fixed; top:40%;left: 22%;margin-left: -40px;font: bold 250px/1 'Nanum Myeongjo', serif; color: #fff;opacity: 0;z-index: 2}
+    .process_bar{width: 50px;height: 3px;background: #000;position: fixed; top:47%;left: 22%;opacity: 0; z-index: 3;}
+    .Pcontext>p{font: bold 46px/54px 'Noto Sans', sans-serif !important;letter-spacing: -1px!important;}
+    .Pcontext>span{display:inline-block !important;height: 150px !important; overflow:auto !important;}
+}
+
+@media all and (max-width:1024px) and (min-width:769px){
+    body{background: #141414;}
+    #gnb>div>span{clear: both;}
+    #gnb{width: 50px;}
+    #gnb>div{width: 50px;}
+    
+   .pp1{content: url('/out-wp/img/main_product1_1024.png');} 
+/*    about*/
+    #about_context>p{font: bold 42px/60px 'Nanum Myeongjo', serif; color: #fff;}
+    .custombg{width: 100%;height: 100%; background: url(/out-wp/img/custommoving_1024.gif)no-repeat center center;transition: all 0.3s;}
+    .techbg{width: 100%;height: 100%; background: url(/out-wp/img/process_1024.png)no-repeat center center;transition: all 0.3s;}
+    
+    #tech_context>section{width: 150px;height: 150px;}
+    #tech_context>p{font: bold 20px/40px 'Nanum Myeongjo', serif; color: #fff;}
+    #tech_context>.tech_step1{background: url(/out-wp/img/step1_150.gif)no-repeat center center;}
+    #tech_context>.tech_step2{background: url(/out-wp/img/step2_150.gif)no-repeat center center;}
+    #tech_context>span{display: inline-block;width: 185px; font:14px/18px 'Noto Sans', sans-serif;letter-spacing: -1px; color: #fff;margin: 5px 0 10px 0;}
+    #tech_context>article{display: inline-block; width: 75%; height: 90%;position: absolute; top:7%;left: 35%; font:18px/25px 'Noto Sans', sans-serif;letter-spacing: -1px; color: #fff;text-align: justify;overflow: auto;padding: 0 50px 0 0;font-weight: 400;}
+    #tech_context>article>span{font-size: 13px;}
+    #tech_context>article>.tech_brand{font: bold 18px/25px 'Nanum Myeongjo', serif;}
+    
+    .printbg{width: 100%;height: 100%; background: url(/out-wp/img/print3d_1024.png)no-repeat center center;transition: all 0.3s;}
+    .specialtybg{width: 100%;height: 100%; background: url(/out-wp/img/specialty_1024.png)no-repeat center center;transition: all 0.3s;}
+    .peoplebg{width: 100%;height: 100%; background: url(/out-wp/img/people_1024.png)no-repeat center center;transition: all 0.3s;}
+    .process_text00{width: 300px;height: 20%;position: fixed; top:40%;margin-left: 20%;font: bold 46px/54px 'Nanum Myeongjo', serif; color: #000;}
+    .process_text{width: 25%;height: 20%;position: fixed; top:100%;margin-left: 23%;font:16px/26px 'Noto Sans', sans-serif;letter-spacing: -1px; color: #000;z-index: 3}
+    .process_num{height: 20%;position: fixed; top:40%;left: 22%;font: bold 200px/1 'Nanum Myeongjo', serif; color: #fff;opacity: 0;z-index: 2}
+    .process_title{position: fixed;top:40%;left: 22%; font: bold 28px/40px 'Noto Sans', sans-serif;letter-spacing: -1px; color: #000;opacity: 0; z-index: 3;margin-left: 2%;}
+    .process_bar{width: 50px;height: 3px;background: #000;position: fixed; top:46%;left: 22%;margin-left: 2%; opacity: 0; z-index: 3;}
+        
+    .Pcontext>p{font: bold 46px/54px 'Noto Sans', sans-serif !important;letter-spacing: -1px!important;}
+    .Pcontext>span{overflow:auto !important; height: 23% !important;width: 700px !important;}
+}
+
+@media all and (max-width:768px) and (min-width:426px){
+    body{background: #141414;}
+    header>a{top:30px;}
+    #gnb{top: 50px; left:40px;width: 50px;}
+    #gnb>div{width: 50px;}
+    #gnb>span{display: inline-block;width: 50px;left: 30px;}
+    #gnb>span:hover{left: 40px;}
+    #gnb>div>span{clear: both;left: 32px;}
+    #gnb:hover div{display: inline-block;width: 50px; left: 40px;}
+    aside{top: 46px; right:25px;}
+    #direction{left: 40px;}
+    .email{display: none;}
+    .call{bottom: 60px;}
+    .kakao{bottom: 30px;left: 50%;margin-left: -75px;font-size: 14px; font-weight: 300;}
+    .map{bottom: 90px;left: 50%;margin-left: -15px;}
+    .place_map>div{width: 210px;} 
+    .place_map>div>span{font-size: 12px;}
+    .pp1{content: url('/out-wp/img/main_product1_768.png');} 
+/*    about*/
+    .custombg{width: 100%;height: 100%; background: url(/out-wp/img/custommoving_768.gif)no-repeat center center;transition: all 0.3s;}
+    .techbg{width: 100%;height: 100%; background: url(/out-wp/img/process_768.png)no-repeat center center;transition: all 0.3s;}
+    #tech_context>section{display: inline-block; width: 230px;height: 150px;}
+    #tech_context>p{font: bold 20px/40px 'Nanum Myeongjo', serif; color: #fff;}
+    #tech_context>.tech_step1{background: url(/out-wp/img/step1_150.gif)no-repeat center center;}
+    #tech_context>.tech_step2{background: url(/out-wp/img/step2_150.gif)no-repeat center center;}
+    #tech_context>span{display: none;}
+    #tech_context>.tech_step1_context{display: inline-block;width: 200px;height: 54px; font:14px/18px 'Noto Sans', sans-serif;letter-spacing: -1px; color: #fff;margin: 5px 0 10px 30px;}
+    #tech_context>.tech_step2_context{display: inline-block;width: 200px;height: 54px; font:14px/18px 'Noto Sans', sans-serif;letter-spacing: -1px; color: #fff;margin: 5px 0 10px 30px;}
+    
+    #tech_context>article{display: inline-block; width: 90%; height: 65%;position: absolute; top:45%;left: 3%; font:18px/25px 'Noto Sans', sans-serif;letter-spacing: -1px; color: #fff;text-align: justify;overflow: auto;padding: 0 50px 0 0;font-weight: 400;}
+    #tech_context>article>span{font-size: 13px;}
+    #tech_context>article>.tech_brand{font: bold 18px/25px 'Nanum Myeongjo', serif;}
+    #about_context>p, #custom_context>p, print_context>p, #specialty_context>p, #people_context>p{width: 500px; font: bold 42px/60px 'Nanum Myeongjo', serif; color: #fff;overflow: auto;}
+    #about_context>span, #custom_context>span, print_context>span, #specialty_context>span, #people_context>span{display: inline-block ;width: 500px;overflow: auto;}
+    
+    .printbg{width: 100%;height: 100%; background: url(/out-wp/img/print3d_768.png)no-repeat center center;transition: all 0.3s;}
+    .specialtybg{width: 100%;height: 100%; background: url(/out-wp/img/specialty_768.png)no-repeat center center;transition: all 0.3s;}
+    .peoplebg{width: 100%;height: 100%; background: url(/out-wp/img/people_768.png)no-repeat center center;transition: all 0.3s;}
+    #people_context>p{height: 150px}
+    #people_context>span{margin-left: -18%;}
+    #people_context>p>span{padding: 0 0 0 30%;}
+    
+    .process_text00{width: 300px;height: 20%;position: fixed; top:40%;margin-left: 20%;font: bold 46px/54px 'Nanum Myeongjo', serif; color: #000;}
+    .process_text{width: 25%;height: 20%;position: fixed; top:100%;margin-left: 23%;font:16px/26px 'Noto Sans', sans-serif;letter-spacing: -1px; color: #000;z-index: 3}
+    .process_num{height: 20%;position: fixed; top:40%;left: 22%;font: bold 200px/1 'Nanum Myeongjo', serif; color: #fff;opacity: 0;z-index: 2}
+    .process_title{position: fixed;top:40%;left: 22%; font: bold 28px/40px 'Noto Sans', sans-serif;letter-spacing: -1px; color: #000;opacity: 0; z-index: 3;margin-left: 2%;}
+    .process_bar{width: 50px;height: 3px;background: #000;position: fixed; top:45%;left: 22%;margin-left: 2%; opacity: 0; z-index: 3;}
+    
+    .Pcontext{margin-top:50% !important;}
+    .Pcontext>p{display: block !important;}
+    .Pcontext>span{overflow:auto !important; height: 25% !important;width: 500px !important;top:61%;}
+}
+@media all and (max-width:425px) and (min-width:376px){
+    header>a{top:10px; background: url(/out-wp/img/logo_w.png)no-repeat center center;}
+    #gnb{top: 29px; left:20px;width: 30px;}
+    #gnb>div{width: 30px; left: 25px;color: #fff;}
+    #gnb>#p1{width: 18px;height:1px;background: #fff;}
+    #gnb>#p2{width: 14px;height:1px;background: #fff;}
+    #gnb>span{top: 10px;left: 0px;font-weight: 700;color: #fff;}
+    #gnb>div>span{clear: both;left: 27px;}
+    #gnb>div>span>a{color: #fff;}
+    #gnb>div{top: 10px;left: 0px;}
+    aside{top: 25px; right:-22px;}
+    .fa-y-combinator{display:none;}
+    .aside1{color: #000;}
+    #direction{left: 20px;}
+    #direction>ul>li{color: #fff;}
+    .bar{background:#fff;}
+/*    main*/
+    .pp1{content: url('/out-wp/img/main_product1_425.png');} 
+/*    about*/
+    .custombg{width: 100%;height: 100%; background: url(/out-wp/img/custommoving_425.gif)no-repeat center center;transition: all 0.3s;}
+    .techbg{width: 100%;height: 100%; background: url(/out-wp/img/process_425.png)no-repeat center center;transition: all 0.3s;}
+    #tech_context{width: 70%;margin-top: 0% !important;margin-left: 23% !important;}
+    #tech_context>section{display: inline-block; width: 130px;height: 100px;}
+    #tech_context>p{font: bold 20px/40px 'Nanum Myeongjo', serif; color: #fff;}
+    #tech_context>.tech_step1{background: url(/out-wp/img/step1_100.gif)no-repeat center center;}
+    #tech_context>.tech_step2{background: url(/out-wp/img/step2_100.gif)no-repeat center center;}
+    #tech_context>span{display: none !important;}
+    #tech_context>.tech_step1_context{display: inline-block !important;width: 120px!important;height:45px !important;overflow:hidden !important; font:10px/11px 'Noto Sans', sans-serif!important;letter-spacing: -1px; color: #fff;margin: 5px 0 10px 0px;}
+    #tech_context>.tech_step2_context{display: inline-block !important;width: 120px!important;height:45px !important;overflow:hidden !important; font:10px/11px 'Noto Sans', sans-serif!important;letter-spacing: -1px; color: #fff;margin: 5px 0 10px 0px;}
+    
+    #tech_context>article{display: inline-block; width: 90%; height: 54%;position: absolute; top:57%;left: 3%; font:16px/20px 'Noto Sans', sans-serif;letter-spacing: -1px; color: #fff;text-align: justify;overflow: auto;padding: 0 50px 0 0;font-weight: 400;}
+    #tech_context>article>span{font-size: 12px;}
+    #tech_context>article>.tech_brand{font: bold 16px/20px 'Nanum Myeongjo', serif;}
+    #specialty_context>.cover{display: block;}
+    
+    .printbg{width: 100%;height: 100%; background: url(/out-wp/img/print3d_425.png)no-repeat center center;transition: all 0.3s;}
+    .specialtybg{width: 100%;height: 100%; background: url(/out-wp/img/specialty_425.png)no-repeat center center;transition: all 0.3s;}
+    .peoplebg{width: 100%;height: 100%; background: url(/out-wp/img/people_425.png)no-repeat center center;transition: all 0.3s;}
+    #people_context{display: none !important;}
+    #people_context2{display: block;height: 100%;width: 100%;position: fixed;top: 100%;left: 0;padding-top: 36%;}
+    #people_context2>p{display: inline-block; width: 300px;height: 120px;margin: 0 0 0 27%;}
+    #people_context2>p>span{display: inline-block;font:18px/24px 'Noto Sans', sans-serif;letter-spacing: -1px; color: #fff;padding: 30px 0 0 0;}
+    #people_context2>p>span>span{font: bold 18px/24px 'Noto Sans', sans-serif;letter-spacing: -1px; color: #fff}
+    #people_context2>.people_one2{background: url(/out-wp/img/people_one100.png)no-repeat center center;}
+    #people_context2>.people_two2{background: url(/out-wp/img/people_two100.png)no-repeat center center;}
+    #people_context2>.people_three2{background: url(/out-wp/img/people_three100.png)no-repeat center center;}
+    #people_context2>span{display: block;width: 300px; font:bold 18px/24px 'Noto Sans', sans-serif;letter-spacing: -1px; color: #fff; position: absolute;top: 60%;left: 20px;}
+    
+/*    portfolio*/
+    #portfolio_pic1{width: 100%;height: 75%; float: none;}
+    #portfolio_pic2{width: 100%;height: 75%; float: none;}
+    #portfolio_pic3{width: 100%;height: 75%; float: none;}
+    #portfolio_pic4{width: 100%;height: 75%; float: none;}
+    #portfolio_pic5{width: 100%;height: 75%; float: none;}
+    #portfolio_pic6{width: 100%;height: 75%; float: none;}
+    
+   
+    .process_img{display:none !important;}
+    .process_img425{display:block;width: 100%;height: 100%;position: fixed;top: 100%;left: 0;z-index: 1}
+    .process_img00_425{background: url(/out-wp/img/realmain_425.png)no-repeat center center;position: fixed;top: 0;left: 0;}
+    .process_img01_425{background: url(/out-wp/img/system01_425.png)no-repeat center center;}
+    .process_img02_425{background: url(/out-wp/img/system02_425.png)no-repeat center center;}
+    .process_img03_425{background: url(/out-wp/img/system03_425.png)no-repeat center center;}
+    .process_img04_425{background: url(/out-wp/img/system04_425.png)no-repeat center center;}
+    .process_img05_425{background: url(/out-wp/img/system05_425.png)no-repeat center center;}
+    
+    #process_bg{width: 100%;height: 50%;position: fixed;top: 70%;left: 0;background: #252525;z-index: 2;opacity: 0.8;}
+    .process_text00{display: none !important;}
+    .process_text00_425{display: block !important; width: 300px;height: 20%;position: fixed; top:75%;margin-left: 20px;font: bold 26px/36px 'Nanum Myeongjo', serif; color: #fff;}
+    .process_text{height: 20%;width: 380px;position: fixed; top:100%;margin-left: 23%;font:16px/26px 'Noto Sans', sans-serif;letter-spacing: -1px; color: #fff !important;z-index: 3;}
+    .process_num{display: none;}
+    .process_title{display: none;}
+    .process_bar{display: none;}
+    .process_num425{display: block;height: 20%;position: fixed; top:25%;left: 20px;font: bold 30px/1 'Nanum Myeongjo', serif; color: #fff;opacity: 0;z-index: 2}
+    .process_title425{display: block;position: fixed;top:35%;left: 70px; font: bold 28px/40px 'Noto Sans', sans-serif;letter-spacing: -1px; color: #fff;opacity: 0; z-index: 3;}
+    .process_bar425{display:block; width: 30px;height: 1px;background: #fff;position: fixed; top:35%;left: 70px;margin-top: 40px; opacity: 0; z-index: 3;}
+    
+    
+ 
+    .Pcontext{height: 20%; margin-top:0% !important;margin-left: 20px !important;}
+    .Pcontext>p{font: bold 22px/30px 'Noto Sans', sans-serif !important;letter-spacing: -1px!important;position: static;}
+    .Pcontext>span{display: block !important;overflow:auto !important; width: 380px !important;height: 50px !important;font:18px/20px 'Noto Sans', sans-serif !important;letter-spacing: -1px;position: static;}
+    
+    
+    .context{height: 20%;position: fixed; top:100%;margin-top: 40% !important;margin-left: 20px!important; color: #fff;}
+    .context>p{font: bold 22px/30px 'Nanum Myeongjo', serif !important;letter-spacing: -1px !important;}
+    .context>span{display: block !important;overflow:auto !important; width: 330px !important;height: 50px !important;font:18px/20px 'Noto Sans', sans-serif !important;letter-spacing: -1px;padding-right: 20px;}
+    
+    .email{display: none;}
+    .call{display: none;}
+    .kakao{width: 200px;height: 30px;bottom: 22px;left: -10px;font-size: 14px; font-weight: 300;text-align:center;line-height: 30px; color:#000;text-shadow: 0px 1px 1px #fff;}
+    .map{bottom: 30px;left: 85%;}
+    .place_map>div{width: 210px;} 
+    .place_map>div>span{font-size: 12px;}
+    
+    
+}
+@media all and (max-width:375px) and (min-width:321px){
+    header>a{top:10px;background: url(/out-wp/img/logo_w.png)no-repeat center center;}
+    #gnb{top: 29px; left:20px;width: 30px;}
+    #gnb>div{width: 30px; left: 25px;}
+    #gnb>#p1{width: 18px;height:1px; background: #fff;}
+    #gnb>#p2{width: 14px;height:1px; background: #fff;}
+    #gnb>span{top: 10px;left: 0px;font-weight: 700; color: #fff;}
+    #gnb>div>span{clear: both;left: 27px;}
+    #gnb>div{top: 10px;left: 0px;}
+    #gnb>div>span>a{color: #fff;}
+    aside{top: 25px; right:-22px;}
+    .fa-y-combinator{display:none;}
+    #direction{left: 20px;}
+    #direction>ul>li{color: #fff;}
+    .bar{background:#fff}
+    .portfolio_sub_menu{display: none !important;}
+/*    main*/
+    .pp1{content: url('/out-wp/img/main_product1_375.png');} 
+/*    about*/
+    .custombg{width: 100%;height: 100%; background: url(/out-wp/img/custommoving_375.gif)no-repeat center center;transition: all 0.3s;}
+    .techbg{width: 100%;height: 100%; background: url(/out-wp/img/process_375.png)no-repeat center center;transition: all 0.3s;}
+    #tech_context{width: 70%;margin-top: 0% !important;margin-left: 23% !important;}
+    #tech_context>section{display: inline-block; width: 120px;height: 100px;}
+    #tech_context>p{font: bold 20px/40px 'Nanum Myeongjo', serif; color: #fff;}
+    #tech_context>.tech_step1{background: url(/out-wp/img/step1_100.gif)no-repeat center center;}
+    #tech_context>.tech_step2{background: url(/out-wp/img/step2_100.gif)no-repeat center center;}
+    #tech_context>span{display: none !important;}
+    #tech_context>.tech_step1_context{display: inline-block !important;width: 110px!important; height:45px !important;overflow:hidden !important;font:10px/11px 'Noto Sans', sans-serif!important;letter-spacing: -1px; color: #fff;margin: 0px 0 10px 0px;}
+    #tech_context>.tech_step2_context{display: inline-block !important;width: 110px!important;height:45px !important;overflow:hidden !important; font:10px/11px 'Noto Sans', sans-serif!important;letter-spacing: -1px; color: #fff;margin: 0px 0 10px 0px;}
+    
+    #tech_context>article{display: inline-block; width: 95%; height: 54%;position: absolute; top:57%;left: 0%; font:16px/20px 'Noto Sans', sans-serif;letter-spacing: -1px; color: #fff;text-align: justify;overflow: auto;padding: 0 40px 0 0;font-weight: 400;}
+    #tech_context>article>span{font-size: 12px;}
+    #tech_context>article>.tech_brand{font: bold 16px/20px 'Nanum Myeongjo', serif;}
+    #specialty_context>.cover{display: block;}
+    
+    
+    .printbg{width: 100%;height: 100%; background: url(/out-wp/img/print3d_375.png)no-repeat center center;transition: all 0.3s;}
+    .specialtybg{width: 100%;height: 100%; background: url(/out-wp/img/specialty_375.png)no-repeat center center;transition: all 0.3s;}
+    
+    .peoplebg{width: 100%;height: 100%; background: url(/out-wp/img/people_375.png)no-repeat center center;transition: all 0.3s;}
+    #people_context{display: none !important;}
+    #people_context2{display: block;height: 100%;width: 100%;position: fixed;top: 100%;left: 0;padding-top: 30%;}
+    #people_context2>p{display: inline-block; width: 300px;height: 105px;margin: 0 0 0 27%;}
+    #people_context2>p>span{display: inline-block;font:18px/24px 'Noto Sans', sans-serif;letter-spacing: -1px; color: #fff;padding: 20px 0 0 0;}
+    #people_context2>p>span>span{font: bold 18px/24px 'Noto Sans', sans-serif;letter-spacing: -1px; color: #fff}
+    #people_context2>.people_one2{background: url(/out-wp/img/people_one100.png)no-repeat center center;}
+    #people_context2>.people_two2{background: url(/out-wp/img/people_two100.png)no-repeat center center;}
+    #people_context2>.people_three2{background: url(/out-wp/img/people_three100.png)no-repeat center center;}
+    #people_context2>span{display: block;width: 300px; font: 18px/24px 'Noto Sans', sans-serif;letter-spacing: -1px; color: #fff; position: absolute;top: 65%;left: 20px;}
+    
+
+/*    portfolio*/
+    #portfolio_pic1{width: 100%;height: 75%; float: none;background: url(/out-wp/img/pic1_375.png)no-repeat center center;}
+    #portfolio_pic2{width: 100%;height: 75%; float: none;background: url(/out-wp/img/pic2_375.png)no-repeat center center;}
+    #portfolio_pic3{width: 100%;height: 75%; float: none;background: url(/out-wp/img/pic4_375.png)no-repeat center center;}
+    #portfolio_pic4{width: 100%;height: 75%; float: none;background: url(/out-wp/img/pic6_375.png)no-repeat center center;}
+    #portfolio_pic5{width: 100%;height: 75%; float: none;background: url(/out-wp/img/pic5_375.png)no-repeat center center;}
+    #portfolio_pic6{width: 100%;height: 75%; float: none;background: url(/out-wp/img/pic8_375.png)no-repeat center center;}
+    
+    .process_img{display:none !important;}
+    .process_img425{display:block;width: 100%;height: 100%;position: fixed;top: 100%;left: 0;z-index: 1}
+    .process_img00_425{background: url(/out-wp/img/realmain_425.png)no-repeat center center;position: fixed;top: 0;left: 0;}
+    .process_img01_425{background: url(/out-wp/img/system01_425.png)no-repeat center center;}
+    .process_img02_425{background: url(/out-wp/img/system02_425.png)no-repeat center center;}
+    .process_img03_425{background: url(/out-wp/img/system03_425.png)no-repeat center center;}
+    .process_img04_425{background: url(/out-wp/img/system04_425.png)no-repeat center center;}
+    .process_img05_425{background: url(/out-wp/img/system05_425.png)no-repeat center center;}
+    
+    #process_bg{width: 100%;height: 50%;position: fixed;top: 75%;left: 0;background: #252525;z-index: 2;opacity: 0.8;}
+    .process_text00{display: none !important;}
+    .process_text00_425{display: block !important; width: 300px;height: 20%;position: fixed; top:75%;margin-left: 20px;font: bold 26px/36px 'Nanum Myeongjo', serif; color: #fff;}
+    .process_text{height: 80px !important;width: 330px;position: fixed; top:100%;margin-left: 23%;font:16px/26px 'Noto Sans', sans-serif;letter-spacing: -1px; color: #fff !important;z-index: 3;overflow: auto;}
+    .process_num{display: none;}
+    .process_title{display: none;}
+    .process_bar{display: none;}
+    .process_num425{display: block;height: 20%;position: fixed; top:25%;left: 20px;font: bold 30px/1 'Nanum Myeongjo', serif; color: #fff;opacity: 0;z-index: 2}
+    .process_title425{display: block;position: fixed;top:35%;left: 70px; font: bold 28px/40px 'Noto Sans', sans-serif;letter-spacing: -1px; color: #fff;opacity: 0; z-index: 3;}
+    .process_bar425{display:block; width: 30px;height: 1px;background: #fff;position: fixed; top:35%;left: 70px;margin-top: 40px; opacity: 0; z-index: 3;}
+    
+ 
+    .Pcontext{height: 20%; margin-top:0% !important;margin-left: 20px !important;}
+    .Pcontext>p{font: bold 22px/30px 'Noto Sans', sans-serif !important;letter-spacing: -1px!important;position: static;}
+    .Pcontext>span{display: block !important;overflow:auto !important; width: 330px !important;height: 50px !important;font:18px/20px 'Noto Sans', sans-serif !important;letter-spacing: -1px;position: static;}
+    
+    
+    .context{height: 20%;position: fixed; top:100%;margin-top: 44% !important;margin-left: 20px!important; color: #fff;}
+    .context>p{font: bold 22px/30px 'Nanum Myeongjo', serif !important;letter-spacing: -1px !important;}
+    .context>span{display: block !important;overflow:auto !important; width: 330px !important;height: 50px !important;font:18px/20px 'Noto Sans', sans-serif !important;letter-spacing: -1px;padding-right: 10px;}
+    
+    .email{display: none;}
+    .call{display: none;}
+    .kakao{width: 200px;height: 30px;bottom: 22px;left: -10px;font-size: 14px; font-weight: 300;text-align:center;line-height: 30px; color:#000;text-shadow: 0px 1px 1px #fff;}
+    .map{bottom: 30px;left: 85%;}
+    .place_map>div{width: 210px;} 
+    .place_map>div>span{font-size: 12px;}
+    
+    
+}
+@media all and (max-width:320px){
+     header>a{top:10px;background: url(/out-wp/img/logo_w.png)no-repeat center center;}
+    #gnb{top: 29px; left:20px;width: 30px;}
+    #gnb>div{width: 30px; left: 25px;}
+    #gnb>#p1{width: 18px;height:1px; background: #fff;}
+    #gnb>#p2{width: 14px;height:1px; background: #fff;}
+    #gnb>span{top: 10px;left: 0px;font-weight: 700; color: #fff;}
+    #gnb>div>span{clear: both;left: 27px;}
+    #gnb>div>span>a{color: #fff;}
+    #gnb>div{top: 10px;left: 0px;}
+    aside{top: 25px; right:-22px;}
+    .fa-y-combinator{display:none;}
+    #direction{left: 20px;}
+    #direction>ul>li{color: #fff;}
+    .bar{background:#fff}
+    .portfolio_sub_menu{display: none !important;}
+/*    main*/
+    .pp1{content: url('/out-wp/img/main_product1_375.png');} 
+/*    about*/
+    .custombg{width: 100%;height: 100%; background: url(/out-wp/img/custommoving_375.gif)no-repeat center center;transition: all 0.3s;}
+    .techbg{width: 100%;height: 100%; background: url(/out-wp/img/process_375.png)no-repeat center center;transition: all 0.3s;}
+    #tech_context{width: 70%;margin-top: 0% !important;margin-left: 23% !important;}
+    #tech_context>section{display: inline-block; width: 105px;height: 100px;}
+    #tech_context>p{font: bold 20px/40px 'Nanum Myeongjo', serif; color: #fff;}
+    #tech_context>.tech_step1{background: url(/out-wp/img/step1_100.gif)no-repeat center center;}
+    #tech_context>.tech_step2{background: url(/out-wp/img/step2_100.gif)no-repeat center center;}
+    #tech_context>span{display: none !important;}
+    #tech_context>.tech_step1_context{display: inline-block !important;width: 100px!important;height:70px !important; font:10px/11px 'Noto Sans', sans-serif!important;letter-spacing: -1px; color: #fff;margin: 5px 0 10px 10px;overflow: hidden !important;}
+    #tech_context>.tech_step2_context{display: inline-block !important;width: 100px!important;height:70px !important; font:10px/11px 'Noto Sans', sans-serif!important;letter-spacing: -1px; color: #fff;margin: 5px 0 10px 10px;overflow: hidden !important;}
+    
+    #tech_context>article{display: inline-block; width: 80%; height: 54%;position: absolute; top:57%;left: 13%; font:16px/20px 'Noto Sans', sans-serif;letter-spacing: -1px; color: #fff;text-align: justify;overflow: auto;padding: 0 40px 0 0;font-weight: 400;}
+    #tech_context>article>span{font-size: 12px;}
+    #tech_context>article>.tech_brand{font: bold 16px/20px 'Nanum Myeongjo', serif;}
+    #specialty_context>.cover{display: block;}
+    
+    .printbg{width: 100%;height: 100%; background: url(/out-wp/img/print3d_375.png)no-repeat center center;transition: all 0.3s;}
+    .specialtybg{width: 100%;height: 100%; background: url(/out-wp/img/specialty_375.png)no-repeat center center;transition: all 0.3s;}
+    .peoplebg{width: 100%;height: 100%; background: url(/out-wp/img/people_375.png)no-repeat center center;transition: all 0.3s;}
+    #people_context{display: none !important;}
+    #people_context2{display: block;height: 100%;width: 100%;position: fixed;top: 100%;left: 0;padding-top: 36%;}
+    #people_context2>p{display: inline-block; width: 300px;height: 120px;margin: 0 0 0 27%;}
+    #people_context2>p>span{display: inline-block;font:18px/24px 'Noto Sans', sans-serif;letter-spacing: -1px; color: #fff;padding: 30px 0 0 0;}
+    #people_context2>p>span>span{font: bold 18px/24px 'Noto Sans', sans-serif;letter-spacing: -1px; color: #fff}
+    #people_context2>.people_one2{background: url(/out-wp/img/people_one100.png)no-repeat center center;}
+    #people_context2>.people_two2{background: url(/out-wp/img/people_two100.png)no-repeat center center;}
+    #people_context2>.people_three2{background: url(/out-wp/img/people_three100.png)no-repeat center center;}
+    #people_context2>span{display: block;width: 300px; font:bold 14px/20px 'Noto Sans', sans-serif;letter-spacing: -1px; color: #fff; position: absolute;top: 70%;left: 20px;}
+    
+/*    portfolio*/
+    #portfolio_pic1{width: 100%;height: 75%; float: none;background: url(/out-wp/img/pic1_375.png)no-repeat center center;}
+    #portfolio_pic2{width: 100%;height: 75%; float: none;background: url(/out-wp/img/pic2_375.png)no-repeat center center;}
+    #portfolio_pic3{width: 100%;height: 75%; float: none;background: url(/out-wp/img/pic4_375.png)no-repeat center center;}
+    #portfolio_pic4{width: 100%;height: 75%; float: none;background: url(/out-wp/img/pic6_375.png)no-repeat center center;}
+    #portfolio_pic5{width: 100%;height: 75%; float: none;background: url(/out-wp/img/pic5_375.png)no-repeat center center;}
+    #portfolio_pic6{width: 100%;height: 75%; float: none;background: url(/out-wp/img/pic8_375.png)no-repeat center center;}
+    
+    .process_img{display:none !important;}
+    .process_img425{display:block;width: 100%;height: 100%;position: fixed;top: 100%;left: 0;z-index: 1}
+    .process_img00_425{background: url(/out-wp/img/realmain_425.png)no-repeat center center;position: fixed;top: 0;left: 0;}
+    .process_img01_425{background: url(/out-wp/img/system01_425.png)no-repeat center center;}
+    .process_img02_425{background: url(/out-wp/img/system02_425.png)no-repeat center center;}
+    .process_img03_425{background: url(/out-wp/img/system03_425.png)no-repeat center center;}
+    .process_img04_425{background: url(/out-wp/img/system04_425.png)no-repeat center center;}
+    .process_img05_425{background: url(/out-wp/img/system05_425.png)no-repeat center center;}
+    
+    #process_bg{width: 100%;height: 50%;position: fixed;top: 70%;left: 0;background: #252525;z-index: 2;opacity: 0.8;}
+    .process_text00{display: none !important;}
+    .process_text00_425{display: block !important; width: 300px;height: 20%;position: fixed; top:75%;margin-left: 20px;font: bold 26px/36px 'Nanum Myeongjo', serif; color: #fff;}
+    .process_text{height: 80px !important;width: 290px;position: fixed; top:100%;margin-left: 23%;font:16px/26px 'Noto Sans', sans-serif;letter-spacing: -1px; color: #fff !important;z-index: 3;overflow: auto;}
+    .process_num{display: none;}
+    .process_title{display: none;}
+    .process_bar{display: none;}
+    .process_num425{display: block;height: 20%;position: fixed; top:25%;left: 20px;font: bold 30px/1 'Nanum Myeongjo', serif; color: #fff;opacity: 0;z-index: 2}
+    .process_title425{display: block;position: fixed;top:35%;left: 70px; font: bold 28px/40px 'Noto Sans', sans-serif;letter-spacing: -1px; color: #fff;opacity: 0; z-index: 3;}
+    .process_bar425{display:block; width: 30px;height: 2px;background: #fff;position: fixed; top:35%;left: 70px;margin-top: 40px; opacity: 0; z-index: 3;}
+    
+ 
+    .Pcontext{height: 20%; margin-top:0% !important;margin-left: 20px !important;}
+    .Pcontext>p{font: bold 22px/30px 'Noto Sans', sans-serif !important;letter-spacing: -1px!important;position: static;}
+    .Pcontext>span{display: block !important;overflow:auto !important; width: 280px !important;height: 50px !important;font:14px/18px 'Noto Sans', sans-serif !important;letter-spacing: -1px;position: static;}
+    
+    
+    .context{height: 20%;position: fixed; top:100%;margin-top: 52% !important;margin-left: 20px!important; color: #fff;}
+    .context>p{font: bold 20px/26px 'Nanum Myeongjo', serif !important;letter-spacing: -1px !important;}
+    .context>span{display: block !important;overflow:auto !important; width: 280px !important;height: 50px !important;font:12px/16px 'Noto Sans', sans-serif !important;letter-spacing: -1px;padding-right: 10px;}
+    
+    .email{display: none;}
+    .call{display: none;}
+    .kakao{width: 200px;height: 30px;bottom: 22px;left: -10px;font-size: 14px; font-weight: 300;text-align:center;line-height: 30px; color:#000;text-shadow: 0px 1px 1px #fff;}
+    .map{bottom: 30px;left: 85%;}
+    .place_map>div{width: 210px;} 
+    .place_map>div>span{font-size: 12px;}
+    
+    
+}
+
+
+
+@media all and (max-height:700px){
+    
+
+}

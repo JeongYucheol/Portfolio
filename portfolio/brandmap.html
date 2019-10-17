@@ -1,0 +1,157 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>sellev. introduction - brand map </title>
+    <meta name="brandmap" content="brandmap description" />
+    <meta name="description" content="sellev. business introdurction" />
+    <link rel="shortcut icon" id="favicon" href="img/favicon.png">
+    <meta name="viewport" content="initial-scale=1, width=device-width, maximum-scale=1, minimum-scale=1, user-scalable=no">
+    <meta name="author" content="sellev.">
+    <link rel="canonical" href="http://sellev.com" />
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:300,400,700' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Pacifico:400' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
+    <link href='css/Bmain.css' rel='stylesheet' type='text/css'>
+    <script type="text/javascript" src="http://code.jquery.com/jquery-latest.min.js"></script>
+    <script type="text/javascript" src="js/jquery.onepage-scroll.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/waypoints/2.0.3/waypoints.min.js"></script>
+    <script src="js/jquery.counterup.min.js"></script>
+    <link href='css/onepage-scroll.css' rel='stylesheet' type='text/css'>
+
+    <script>
+        $(document).ready(function () {
+            $(".main").onepage_scroll({
+                sectionContainer: "section",
+                loop: true,
+                afterMove: (idx) => {
+                    $(`#numbers${idx} .counter`).counterUp({
+                        delay: 10,
+                        time: 3000
+                    });
+                }
+            });
+            $(`#numbers1 .counter`).counterUp({
+                delay: 10,
+                time: 1000
+            });
+            $(".btns").click(function () {
+                if ($("video").prop('muted', true)) {
+                    $("video").prop('muted', false);
+                }
+                else {
+                    $("video").prop('muted', true);
+                }
+            });
+        });  
+    </script>
+</head>
+
+<body>
+
+    <div class="head_box">
+        <div class="logo">
+            <img src="img/sellev_logo.svg" alt="sellev.logo">
+        </div>
+        <div class="sns">
+            <a href="https://www.youtube.com/c/sellev?sub_confirmation=1" target="_blank"><i class="fab fa-youtube"></i></a>
+            <a href="https://www.facebook.com/sellev.asia/" target="_blank"><i class="fab fa-facebook-square"></i></a>
+            <a href="down/introduction.pdf" download><i class="fas fa-download"></i></a>
+<!--            <a href="http://www.sellev.com"><i class="fab fa-speakap"></i></a>-->
+        </div>
+    </div>
+    <div class="wrapper">
+        <div class="main">
+
+            <section class="page1 page0">
+                <div class="cover"></div>
+                <div id="left1">
+                    <div></div>
+                </div>
+                <div id="middle1">
+
+                </div>
+
+
+                <div id="right1">
+                    <video autoplay loop muted>
+                        <source src="img/peoplevideo.mp4" type="video/mp4"> "Your browser does not support the video tag."
+                    </video>
+                    <img class="circle1" src="img/circle.png" alt="circle">
+
+                    <div id="numbers1">
+                        <p>채널 평균 조회수</p>
+                        <span class="counter">1,344,400</span>
+                        <p>채널 평균 도달</p>
+                        <span class="counter">100,204,400</span>
+                    </div>
+                </div>
+
+                <div class="title_container">
+                    <div class="title_line"></div>
+                    <p class="credit">
+                        <a href="http://www.sellev.com">셀레브. 다이렉트</a>
+                        <a class="credit_a" href="http://www.sellev.com" target="_blank">sellev. direct</a>
+                    </p>
+                </div>
+
+                <div class="page_container">
+
+                    <div class="context_line"></div>
+                    <h2>다양한 셀레버의 활동을 보여주고 그들이 왜 이 활동을 하는지 이야기를 담아낸 프로그램</h2>
+
+
+                </div>
+            </section>
+
+            <section class="page2 page0">
+                <div class="cover"></div>
+                <div id="left2">
+                    <div></div>
+                </div>
+                <div id="middle2">
+                    <img id="directaction" src="img/direct_action.gif" alt="">
+                </div>
+
+
+                <div id="right2">
+                    <video autoplay loop muted>
+                        <source src="img/directvideo.mp4" type="video/mp4"> "Your browser does not support the video tag."
+                    </video>
+                    <img class="circle1" src="img/circle.png" alt="circle">
+
+                    <div id="numbers2">
+                        <p>채널 평균 조회수</p>
+                        <span class="counter">44,400</span>
+                        <p>채널 평균 도달</p>
+                        <span class="counter">90,204,400</span>
+                    </div>
+                </div>
+
+                <div class="title_container">
+                    <div class="title_line"></div>
+                    <p class="credit">
+                        <a href="http://www.sellev.com">셀레브. 다이렉트</a>
+                        <a class="credit_a" href="http://www.sellev.com" target="_blank">sellev. direct</a>
+                    </p>
+                </div>
+
+                <div class="page_container">
+
+                    <div class="context_line"></div>
+                    <h2>다양한 셀레버의 활동을 보여주고 그들이 왜 이 활동을 하는지 이야기를 담아낸 프로그램</h2>
+
+
+                </div>
+            </section>
+
+
+
+
+        </div>
+        <a class="back" href="brandmap.html">Brand map in sellev.</a>
+    </div>
+</body>
+
+</html>
