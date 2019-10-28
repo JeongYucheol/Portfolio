@@ -20,7 +20,7 @@
          $('#gnb>div').hide();
          function color_w(){
             $('#direction>ul>.bar').css({'background':'#fff'})
-            $('#direction>ul>.big,.sub,.email,.call').css({'color':'#fff'})   
+            $('#direction>ul>.big,.sub,.email,.call').css({'color':'#fff'})
             $('#gnb>p').css({'background':'#fff'})
             $('#gnb>span,#gnb>div>span>a').css({'color':'#fff'})
             $('header>a').css({'background':'url(/out-wp/img/logo_w.png)no-repeat center center'})
@@ -28,7 +28,7 @@
            }
          function color_b(){
            $('#direction>ul>.bar').css({'background':'#000'})
-           $('#direction>ul>.big,.sub,.email,.call').css({'color':'#000'})  
+           $('#direction>ul>.big,.sub,.email,.call').css({'color':'#000'})
            $('#gnb>p').css({'background':'#000'})
            $('#gnb>span,#gnb>div>span>a').css({'color':'#000'})
            $('header>a').css({'background':'url(/out-wp/img/logo.png)no-repeat center center'})
@@ -63,7 +63,7 @@
                  'width':'50px',
                  'transition':'0.5s'
                 })
-             
+
            })
           $('#gnb').on('click',function(){
               if(menu==1){
@@ -75,27 +75,27 @@
                   $('#gnb>span').fadeIn('slow');
               menu = 1;
               }
-           }) 
+           })
           $('.fa-y-combinator').on('mouseover',function(){
             $('.kakao').css({'color':'#fedd00','transition':'0.5s'})
         })
           $('.fa-y-combinator').on('mouseout',function(){
            $('.kakao').css({'color':'#fff','transition':'0.5s'})
-            })  
+            })
           color_b();
           $('#sub_portfolio').on('click',function(){
               $(".main").moveTo(1);
           })
-               
+
           $('#sub_next').on('click',function(){
                $(".main").moveDown();
                color_b();
            })
-           
+
           $('#sub_prev').on('click',function(){
                $('.main').moveUp();
            })
-            
+
           $(".main").onepage_scroll({
    sectionContainer: "section",     // sectionContainer accepts any kind of selector in case you don't want to use section
    easing: "ease",                  // Easing options accepts the CSS3 easing animation such "ease", "linear", "ease-in",
@@ -110,40 +110,40 @@
    responsiveFallback: false,        // You can fallback to normal page scroll by defining the width of the browser in which
                                     // you want the responsive fallback to be triggered. For example, set this to 600 and whenever
                                     // the browser's width is less than 600, the fallback will kick in.
-   direction: "vertical"            // You can now define the direction of the One Page Scroll animation. Options available are "vertical" and "horizontal". The default value is "vertical".  
+   direction: "vertical"            // You can now define the direction of the One Page Scroll animation. Options available are "vertical" and "horizontal". The default value is "vertical".
 });
       })
-      
+
     </script>
 </head>
 <body id="body_portfolio">
-       <header><a href="index.php"></a></header>
+       <header><a href="index.html"></a></header>
        <div id='gnb'>
        <p id='p1'></p>
        <p id='p2'></p>
        <span>menu</span>
-       <div>    
+       <div>
            <span><a href="about.html">about</a></span>
            <span><a href="process.html">process</a></span>
            <span><a href="portfolio.html">portfolio</a></span>
            <span><a href="#">shop</a></span>
        </div>
-       
-       
+
+
        </div>
        <aside>
        <a href="https://www.facebook.com/fgoutfitters/" target="_blank"><i class="fab fa-facebook aside1" aria-hidden="true"></i></a>
        <a href="https://www.instagram.com/outfitters2017/" target="_blank"><i class="fab fa-instagram aside1" aria-hidden="true"></i></a>
        <a href=""><i class="fab fa-y-combinator aside1" aria-hidden="true"></i></a>
        </aside>
-              
+
        <div id="direction" class="portfolio_sub_menu">
            <ul>
                <li class="big" id="sub_portfolio"><span>portfolio</span><p>.</p></li>
                <li class="bar"></li>
                <li class="sub" id="sub_prev"><span>prev</span></li>
                <li class="sub" id="sub_next"><span>next</span></li>
-               
+
            </ul>
        </div>
        <div class="main">
@@ -152,7 +152,7 @@
           <div id="portfolio_context1" class = 'Pcontext'>
           <p>Carbon Road. 11:08</p>
           <span>탄소섬유의 탄성을 최대한 활용한 지오메트리는 장시간 라이딩에도 라이더가 피로하지 않고 집중력 있게 라이딩 할 수 있도록 합니다.<br>
-          유려한 싯스테이가 매력적인 11:08은 튜브 투 튜브 핸드레이업으로 진행된 로드 엔듀런스 타입의 프레임이 핵심 구성요소입니다. 
+          유려한 싯스테이가 매력적인 11:08은 튜브 투 튜브 핸드레이업으로 진행된 로드 엔듀런스 타입의 프레임이 핵심 구성요소입니다.
           <br>
           - Total Weight : 7.6 kg. 56size. Leader I806TR. 3T Aeronova. Cinelli Volee. Enve 6Deg 110mm. <br>Outfitters Custom Carbon 38mm. Shimano Ultegra Group Set
           </span>
@@ -165,14 +165,14 @@
           <span>
           스테인레스는 무게 대비 강도를 따진다면, 흔히들 신뢰하고 있는 티타늄 보다 뛰어납니다.<br>탄성과 보존성에 뛰어난 스테인레스 프레임은 라이더들에게 또 다른 경험을 제공할 것입니다.<br>웰딩의 흔적들이 고스란히 남은 워크-아웃 프레임은 <br>특유의 독특함으로 라이더 만의 아이덴티티를 표현합니다.</span>
           </div>
-      </section>       
+      </section>
       <section>
           <div id="portfolio_pic3"></div>
           <div id="portfolio_context3" class = 'Pcontext'>
           <p>Carbon Fixed Gear.</p>
           <span>3K 능직 카본 무늬를 살린 도색은<br>픽시 및 싱글기어 씬의 날 것 그대로의 느낌과 거친 느낌을 표현합니다.
           <br>
-          <br>Frame Weight:1.3kg. &nbsp; 55size. 
+          <br>Frame Weight:1.3kg. &nbsp; 55size.
           </span>
           </div>
       </section>
@@ -191,7 +191,7 @@
           <div id="portfolio_context5" class = 'Pcontext'>
           <p>23:08.</p>
           <span>어두운 밤, 혼자 듣는 휠과 지면의 마찰소리는 썩 듣기 좋습니다.
-          <br>혹여나, 감성 충만한 당신에게 어두운 밤거리가 위험할까, 
+          <br>혹여나, 감성 충만한 당신에게 어두운 밤거리가 위험할까,
           <br>다운튜브에서 싯튜브까지 이어진 라이트라인이 당신의 앞,뒤를 밝힙니다.
           <br><br>1회 충전 14시간이상 사용가능
           </span>
@@ -204,17 +204,17 @@
           <span>국내 E.L. 산업을 주도 하고있는 NET 와의 공동작업은 저희에겐 새로운 도전이였고,<br>재미난 결과물을 도출하게 되었습니다. <br>공동작업은 언제나 그렇듯, 새로운 떨림을 동반합니다.</span>
           </div>
       </section>
-      
+
        </div>
-      
-       
+
+
     <footer>
-        
+
         <span class="email">all@outfitters.co.kr</span>
         <span class="call">070.8811.1975</span>
         <span class="kakao">KakaoTalk <span>@아웃피터스</span></span>
         <span class="map">map</span>
-        
+
         <div class="place_map">
         <p>
             <iframe src="https://www.google.com/maps/embed?pb=!1m21!1m12!1m3!1d3164.8157803909294!2d127.00047871944174!3d37.51226283837647!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m6!3e6!4m0!4m3!3m2!1d37.512024499999995!2d127.0011976!5e0!3m2!1sko!2skr!4v1482462700491&zoom=17" width="100%" height="100%" frameborder="0" style="border:0" allowfullscreen></iframe>
@@ -227,17 +227,17 @@
         </div>
         <script>
           $(function(){
-              
+
               var ccc ='2';
            $('.map').on('click',function(){
                if(ccc==2){$('.place_map').animate({'top':'0px'},800,'easeOutQuint')
                 ccc='1';
-             
+
                }else{$('.place_map').animate({'top':'-100%'},800,'easeOutQuint')
                 ccc='2';
                 }
             })
-           
+
            $('.place_map').on('click',function(){
                $('.place_map').animate({'top':'-100%'},800,'easeOutQuint')
                 ccc='2';
@@ -245,9 +245,9 @@
            })
         </script>
     </footer>
-    
-    
-    
+
+
+
 
 </body>
 </html>
