@@ -287,7 +287,7 @@ footer{font: bold 16px/20px 'Noto Sans', sans-serif;}
 
 @media all and (max-width:1440px) and (min-width:1281px){
 
-    .pp1{content: url('/img/main_product1_1440.png');}
+    .pp1{content: url('/portfolio/out-wp/img/main_product1_1440.png');}
 /*    about*/
     .custombg{width: 100%;height: 100%; background: url(/img/custommoving_1440.gif)no-repeat center center;transition: all 0.3s;}
     .techbg{width: 100%;height: 100%; background: url(/img/process_1440.png)no-repeat center center;transition: all 0.3s;}
@@ -303,7 +303,7 @@ footer{font: bold 16px/20px 'Noto Sans', sans-serif;}
 @media all and (max-width:1280px) and (min-width:1025px){
 
 
-    .pp1{content: url('/portfolio/out-wp/img/main_product1_1280.png');}
+    .pp1{content: url('/portfolio/out-wp/portfolio/out-wp/img/main_product1_1280.png');}
 /*    about*/
     .custombg{width: 100%;height: 100%; background: url(/img/custommoving_1440.gif)no-repeat center center;transition: all 0.3s;}
     .techbg{width: 100%;height: 100%; background: url(/img/process_1280.png)no-repeat center center;transition: all 0.3s;}
@@ -330,7 +330,7 @@ footer{font: bold 16px/20px 'Noto Sans', sans-serif;}
     #gnb{width: 50px;}
     #gnb>div{width: 50px;}
 
-   .pp1{content: url('/img/main_product1_1024.png');}
+   .pp1{content: url('/portfolio/out-wp/img/main_product1_1024.png');}
 /*    about*/
     #about_context>p{font: bold 42px/60px 'Nanum Myeongjo', serif; color: #fff;}
     .custombg{width: 100%;height: 100%; background: url(/img/custommoving_1024.gif)no-repeat center center;transition: all 0.3s;}
@@ -375,7 +375,7 @@ footer{font: bold 16px/20px 'Noto Sans', sans-serif;}
     .map{bottom: 90px;left: 50%;margin-left: -15px;}
     .place_map>div{width: 210px;}
     .place_map>div>span{font-size: 12px;}
-    .pp1{content: url('/img/main_product1_768.png');}
+    .pp1{content: url('/portfolio/out-wp/img/main_product1_768.png');}
 /*    about*/
     .custombg{width: 100%;height: 100%; background: url(/img/custommoving_768.gif)no-repeat center center;transition: all 0.3s;}
     .techbg{width: 100%;height: 100%; background: url(/img/process_768.png)no-repeat center center;transition: all 0.3s;}
@@ -427,7 +427,7 @@ footer{font: bold 16px/20px 'Noto Sans', sans-serif;}
     #direction>ul>li{color: #fff;}
     .bar{background:#fff;}
 /*    main*/
-    .pp1{content: url('/img/main_product1_425.png');}
+    .pp1{content: url('/portfolio/out-wp/img/main_product1_425.png');}
 /*    about*/
     .custombg{width: 100%;height: 100%; background: url(/img/custommoving_425.gif)no-repeat center center;transition: all 0.3s;}
     .techbg{width: 100%;height: 100%; background: url(/img/process_425.png)no-repeat center center;transition: all 0.3s;}
@@ -524,7 +524,7 @@ footer{font: bold 16px/20px 'Noto Sans', sans-serif;}
     .bar{background:#fff}
     .portfolio_sub_menu{display: none !important;}
 /*    main*/
-    .pp1{content: url('/img/main_product1_375.png');}
+    .pp1{content: url('/portfolio/out-wp/img/main_product1_375.png');}
 /*    about*/
     .custombg{width: 100%;height: 100%; background: url(/img/custommoving_375.gif)no-repeat center center;transition: all 0.3s;}
     .techbg{width: 100%;height: 100%; background: url(/img/process_375.png)no-repeat center center;transition: all 0.3s;}
@@ -622,7 +622,7 @@ footer{font: bold 16px/20px 'Noto Sans', sans-serif;}
     .bar{background:#fff}
     .portfolio_sub_menu{display: none !important;}
 /*    main*/
-    .pp1{content: url('/img/main_product1_375.png');}
+    .pp1{content: url('/portfolio/out-wp/img/main_product1_375.png');}
 /*    about*/
     .custombg{width: 100%;height: 100%; background: url(/img/custommoving_375.gif)no-repeat center center;transition: all 0.3s;}
     .techbg{width: 100%;height: 100%; background: url(/img/process_375.png)no-repeat center center;transition: all 0.3s;}
