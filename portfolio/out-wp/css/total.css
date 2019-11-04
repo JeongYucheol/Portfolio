@@ -16,7 +16,7 @@ body{width: 100%;height: 100%; background: #141414;}
 #body_portfolio{background: #fff;}
 .body_black{background: #000;}
 /*중앙로고*/
-header>a{width: 62px;height: 54px;background: url(//img/logo.png)no-repeat center center; position: fixed; top: 80px;left: 50%;margin-left: -31px;z-index: 10;}
+header>a{width: 62px;height: 54px;background: url(/img/logo.png)no-repeat center center; position: fixed; top: 80px;left: 50%;margin-left: -31px;z-index: 10;}
 
 /*좌측메뉴*/
 #gnb{width: 410px;height: 20px;position:fixed; top: 100px; left:100px;z-index: 10;cursor:pointer;}
@@ -108,7 +108,7 @@ aside{width: 80px;height: 25px;position: fixed;top: 100px;right: 100px;padding: 
 #about_context>span{font:20px/30px 'Noto Sans', sans-serif;letter-spacing: -1px; color: #fff}
 
 /*about-custom*/
-.custombg{width: 100%;height: 100%; background: url(//img/custommoving.gif)no-repeat center center;transition: all 0.3s;}
+.custombg{width: 100%;height: 100%; background: url(/img/custommoving.gif)no-repeat center center;transition: all 0.3s;}
 #custom_context{height: 20%;position: fixed; top:100%;margin-left: 20%;z-index: 100;}
 #custom_context>p{font: bold 52px/70px 'Nanum Myeongjo', serif; color: #fff;}
 #custom_context>span{font:20px/30px 'Noto Sans', sans-serif;letter-spacing: -1px; color: #fff}
@@ -303,7 +303,7 @@ footer{font: bold 16px/20px 'Noto Sans', sans-serif;}
 @media all and (max-width:1280px) and (min-width:1025px){
 
 
-    .pp1{content: url('/img/main_product1_1280.png');}
+    .pp1{content: url('/portfolio/out-wp/img/main_product1_1280.png');}
 /*    about*/
     .custombg{width: 100%;height: 100%; background: url(/img/custommoving_1440.gif)no-repeat center center;transition: all 0.3s;}
     .techbg{width: 100%;height: 100%; background: url(/img/process_1280.png)no-repeat center center;transition: all 0.3s;}
