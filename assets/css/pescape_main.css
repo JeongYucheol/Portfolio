@@ -8609,3 +8609,6 @@ input, select, textarea {
 		  font-weight: bold;
 		  text-decoration: none;
 		}
+		header{
+			width: 100%;background-color: #e2e2e2;
+		}
