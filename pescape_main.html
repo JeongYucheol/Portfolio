@@ -74,8 +74,8 @@ function safetyPasswordPattern(str) {
 		if(pass.length) {
 
 				// 최대 입력 글자수를 제한한다.
-				if(pass.length < 8 || pass.length > 16) {
-						message = ":: 최소 8자 이상, 최대 16자 이하 ::";
+				if(pass.length < 4 || pass.length > 4) {
+						message = ":: 비밀번호는 4자리 ::";
 						color = "#A23E48";
 				}
 
