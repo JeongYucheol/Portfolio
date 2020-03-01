@@ -95,6 +95,7 @@ body.disabled-onepage-scroll, .disabled-onepage-scroll .onepage-wrapper, html {
 }
 .main{
   background-color: #e2e2e2;
+  position: relative;
 }
 .page{
   width: 100%;
