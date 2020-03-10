@@ -3,7 +3,7 @@
 /*'Open Sans', sans-serif;*/
 @import url('https://fonts.googleapis.com/css?family=Noto+Sans:400,700');
 /*'Noto Sans', sans-serif;*/
-@import url(http://fonts.googleapis.com/earlyaccess/nanummyeongjo.css);
+@import url('https://fonts.googleapis.com/earlyaccess/nanummyeongjo.css');
 /*'Nanum Myeongjo', serif;*/
 *{margin: 0;border: 0;padding: 0; font-family:'Noto Sans', sans-serif; }
 ul,li{list-style: none;}
