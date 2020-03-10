@@ -159,7 +159,7 @@ aside{width: 80px;height: 25px;position: fixed;top: 100px;right: 100px;padding: 
 /*about-*/
 
 /*process*/
-.process_img00{width: 50%;height: 100%;position: fixed;top: 0;left: 50%; z-index: 1;background: url(img/realmain.png)no-repeat center center;}
+.process_img00{width: 50%;height: 100%;position: fixed;top: 0;left: 50%; z-index: 1;background: url(../img/realmain.png)no-repeat center center;}
 .process_img01{width: 50%;height: 100%;background: url(../img/system01.png)no-repeat center center;position: fixed;top: 0;left: 0%; z-index: 1;}
 .process_img02{width: 50%;height: 100%;background: url(../img/system02.png)no-repeat center center;position: fixed;top: 0;left:0%; z-index: 1;}
 .process_img03{width: 50%;height: 100%;background: url(../img/system03.png)no-repeat center center;position: fixed;top: 0;left: 0%; z-index: 1;}
