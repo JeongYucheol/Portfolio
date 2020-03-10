@@ -16,7 +16,7 @@ body{width: 100%;height: 100%; background: #141414;}
 #body_portfolio{background: #fff;}
 .body_black{background: #000;}
 /*중앙로고*/
-header>a{width: 62px;height: 54px;background: url(img/logo.png)no-repeat center center; position: fixed; top: 80px;left: 50%;margin-left: -31px;z-index: 10;}
+header>a{width: 62px;height: 54px;background: url(../img/logo.png)no-repeat center center; position: fixed; top: 80px;left: 50%;margin-left: -31px;z-index: 10;}
 
 /*좌측메뉴*/
 #gnb{width: 410px;height: 20px;position:fixed; top: 100px; left:100px;z-index: 10;cursor:pointer;}
