@@ -8619,3 +8619,10 @@ input, select, textarea {
 		.roundround b{
 			text-decoration: underline;
 		}
+		.mg0{
+			width: 96% !important;
+			margin: 0 auto;
+		}
+		.mg1{
+			margin-bottom: 100px;
+		}
